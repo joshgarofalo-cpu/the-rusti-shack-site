@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Apparel",
+    "count": 8,
+    "priceLow": 14.99,
+    "priceHigh": 58.0,
+    "rentable": 0
+  },
+  {
+    "name": "Beach Essentials",
+    "count": 12,
+    "priceLow": 6.99,
+    "priceHigh": 89.0,
+    "rentable": 8
+  },
+  {
+    "name": "Fishing",
+    "count": 8,
+    "priceLow": 6.99,
+    "priceHigh": 98.0,
+    "rentable": 2
+  },
+  {
+    "name": "Snorkel & Dive",
+    "count": 9,
+    "priceLow": 28.5,
+    "priceHigh": 109.0,
+    "rentable": 9
+  },
+  {
+    "name": "Surfing",
+    "count": 8,
+    "priceLow": 5.99,
+    "priceHigh": 1099.0,
+    "rentable": 4
+  }
+]
