@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     // Already processed (e.g. a refresh)? Just show the existing order.
     const existing = await orderForSession(sessionId);
     if (existing) {
-      return NextResponse.redirect(`${origin}/checkout/confirmed?order=${existing}`);
+      return NextResponse.redirect(`${origin}/checkout/confirmed?session=${sessionId}`);
     }
 
     // Rebuild the order from the session metadata, re-pricing on the server.
@@ -57,9 +57,7 @@ export async function GET(request: Request) {
     const created = await createWebOrder(payload);
     await recordSessionOrder(sessionId, created.order.OrderID);
 
-    return NextResponse.redirect(
-      `${origin}/checkout/confirmed?order=${created.order.OrderID}`
-    );
+    return NextResponse.redirect(`${origin}/checkout/confirmed?session=${sessionId}`);
   } catch (e) {
     console.error("checkout success handling failed", e);
     return NextResponse.redirect(`${origin}/cart?error=1`);

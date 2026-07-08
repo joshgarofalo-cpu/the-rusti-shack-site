@@ -1,16 +1,19 @@
 import Link from "next/link";
-import { getWebOrder } from "../../lib/webstore";
+import { getWebOrder, orderForSession } from "../../lib/webstore";
 import { getAllProducts } from "../../lib/catalog";
 import ClearCartOnMount from "../../components/ClearCartOnMount";
 
 export const metadata = { title: "Order confirmed — The Rusti Shack" };
 
+// Look up the order by the unguessable Stripe session id (not the sequential
+// order id) so buyers' names/addresses can't be enumerated at this URL.
 export default async function ConfirmedPage({
   searchParams,
 }: {
-  searchParams: Promise<{ order?: string }>;
+  searchParams: Promise<{ session?: string }>;
 }) {
-  const { order: orderId } = await searchParams;
+  const { session } = await searchParams;
+  const orderId = session ? await orderForSession(session) : null;
   const found = orderId ? await getWebOrder(orderId) : null;
 
   if (!found) {

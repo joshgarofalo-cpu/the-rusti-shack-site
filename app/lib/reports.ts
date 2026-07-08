@@ -30,7 +30,11 @@ export async function fetchManagerData(): Promise<ManagerData> {
 
 /* ---------- CSV helpers ---------- */
 function cell(v: unknown): string {
-  const s = v === null || v === undefined ? "" : String(v);
+  let s = v === null || v === undefined ? "" : String(v);
+  // Neutralize spreadsheet formula injection: a cell starting with = + - @ (or a
+  // control char) can execute in Excel/Sheets. Prefix with an apostrophe so it's
+  // treated as text. (Customer names/addresses flow into these files.)
+  if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
   return /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
 }
 
