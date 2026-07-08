@@ -1,18 +1,12 @@
 import type { Product } from "../lib/catalog";
+import { isRentable } from "../lib/catalog";
 
-/** Small pill showing whether an item is for sale, rent, or both. */
+/**
+ * Online the shop only *sells* — rentals happen on Apo Island. This badge just
+ * flags items that can also be rented at the island shop; it is not an online option.
+ * Renders nothing for sale-only items.
+ */
 export default function AvailabilityBadge({ product }: { product: Product }) {
-  const label =
-    product.availability === "Both"
-      ? "Buy or Rent"
-      : product.availability === "Rental only"
-      ? "Rent only"
-      : "For sale";
-  const tone =
-    product.availability === "Both"
-      ? "badge--both"
-      : product.availability === "Rental only"
-      ? "badge--rent"
-      : "badge--sale";
-  return <span className={`badge ${tone}`}>{label}</span>;
+  if (!isRentable(product)) return null;
+  return <span className="badge badge--rent">🏝️ Also rents on-island</span>;
 }

@@ -12,25 +12,17 @@ export default function ProductCard({ product: p }: { product: Product }) {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={p.image} alt={p.name} loading="lazy" />
         ) : null}
-        <span className="prod-card__badge-float">
-          <AvailabilityBadge product={p} />
-        </span>
+        {isRentable(p) && (
+          <span className="prod-card__badge-float">
+            <AvailabilityBadge product={p} />
+          </span>
+        )}
       </div>
       <div className="prod-card__body">
         <span className="prod-card__cat">{p.subcategory}</span>
         <h3>{p.name}</h3>
         <div className="prod-card__foot">
-          {p.availability === "Rental only" ? (
-            <span className="prod-card__price">
-              ${p.rentalRate?.toFixed(2)}
-              <span className="prod-card__per">/day</span>
-            </span>
-          ) : (
-            <span className="prod-card__price">${p.price?.toFixed(2)}</span>
-          )}
-          {p.availability === "Both" && isRentable(p) ? (
-            <span className="prod-card__rent">rent ${p.rentalRate?.toFixed(2)}/day</span>
-          ) : null}
+          <span className="prod-card__price">${p.price?.toFixed(2)}</span>
         </div>
       </div>
     </Link>

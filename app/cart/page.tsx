@@ -1,30 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 import { useCart } from "../components/CartContext";
 
 export default function CartPage() {
   const { items, total, setQty, remove, clear } = useCart();
-  const [placed, setPlaced] = useState(false);
-
-  if (placed) {
-    return (
-      <main>
-        <div className="container">
-          <div className="cart-empty">
-            <div style={{ fontSize: "3rem" }}>🐢</div>
-            <h1>Salamat! Order noted.</h1>
-            <p>
-              This is a demo checkout — no payment was taken. On the real shop you&apos;d
-              pay here or settle up when you collect your gear on the island.
-            </p>
-            <Link href="/shop" className="btn btn--primary">Keep browsing</Link>
-          </div>
-        </div>
-      </main>
-    );
-  }
 
   if (items.length === 0) {
     return (
@@ -57,12 +37,7 @@ export default function CartPage() {
                 </div>
                 <div className="cart-item__info">
                   <Link href={`/product/${i.sku}`} className="cart-item__name">{i.name}</Link>
-                  <span className={`badge ${i.mode === "rent" ? "badge--rent" : "badge--sale"}`}>
-                    {i.mode === "rent" ? "Rental · per day" : "Purchase"}
-                  </span>
-                  <span className="cart-item__price">
-                    ${i.price.toFixed(2)}{i.mode === "rent" ? "/day" : ""} each
-                  </span>
+                  <span className="cart-item__price">${i.price.toFixed(2)} each</span>
                 </div>
                 <div className="cart-item__qty">
                   <button onClick={() => setQty(i.key, i.qty - 1)} aria-label="Decrease quantity">−</button>
@@ -85,12 +60,12 @@ export default function CartPage() {
               <span>${total.toFixed(2)}</span>
             </div>
             <p className="cart__hint">
-              Rental days &amp; shipping are worked out when you collect or we post your order.
+              Shipping is worked out at checkout when we post your order worldwide.
             </p>
-            <button className="btn btn--primary cart__checkout" onClick={() => setPlaced(true)}>
+            <Link href="/checkout" className="btn btn--primary cart__checkout">
               Checkout
-            </button>
-            <p className="cart__demo">Demo checkout — no payment is taken.</p>
+            </Link>
+            <p className="cart__demo">Secure checkout · we ship worldwide.</p>
           </aside>
         </div>
       </div>

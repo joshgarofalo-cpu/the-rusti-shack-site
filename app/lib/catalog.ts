@@ -22,6 +22,7 @@ export type Product = {
   category: string;
   subcategory: string;
   price: number | null;
+  unitCost: number | null;
   rentalRate: number | null;
   availability: Availability | string;
   supplier: string | null;

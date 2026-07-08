@@ -9,16 +9,13 @@ import {
   type ReactNode,
 } from "react";
 
-export type CartMode = "buy" | "rent";
-
 export type CartItem = {
-  /** Unique per (sku + mode) so a bought and rented copy stay separate lines. */
+  /** Unique per SKU. Online the shop only sells, so one line per product. */
   key: string;
   sku: string;
   name: string;
   image: string | null;
-  mode: CartMode;
-  price: number; // unit price for buy, or per-day rate for rent
+  price: number; // unit sale price
   qty: number;
 };
 
@@ -33,7 +30,7 @@ type CartContextValue = {
 };
 
 const CartContext = createContext<CartContextValue | null>(null);
-const STORAGE_KEY = "rusti-cart-v1";
+const STORAGE_KEY = "rusti-cart-v2";
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
@@ -69,7 +66,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       total,
       add: (item, qty = 1) =>
         setItems((prev) => {
-          const key = `${item.sku}:${item.mode}`;
+          const key = item.sku;
           const existing = prev.find((i) => i.key === key);
           if (existing) {
             return prev.map((i) =>

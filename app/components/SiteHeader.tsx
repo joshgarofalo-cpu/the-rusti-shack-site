@@ -7,7 +7,7 @@ import { useCart } from "./CartContext";
 
 const LINKS = [
   { href: "/shop", label: "Shop" },
-  { href: "/shop?category=Snorkel+%26+Dive", label: "Rentals" },
+  { href: "/#rentals", label: "Rentals" },
   { href: "/apo-island", label: "Apo Island" },
 ];
 

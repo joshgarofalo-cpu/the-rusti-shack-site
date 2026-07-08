@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local editor/preview config
 .claude/
+
+# runtime-generated web order records (test data)
+/data/web-orders/

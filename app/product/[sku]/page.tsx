@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products, getProduct, isRentable, isSellable } from "../../lib/catalog";
+import { products, getProduct, isRentable } from "../../lib/catalog";
 import AddToCart from "../../components/AddToCart";
 import AvailabilityBadge from "../../components/AvailabilityBadge";
 
@@ -19,7 +19,7 @@ export async function generateMetadata({
   if (!p) return { title: "Not found — The Rusti Shack" };
   return {
     title: `${p.name} — The Rusti Shack`,
-    description: `${p.name} — ${p.category}. Buy or rent at The Rusti Shack on Apo Island.`,
+    description: `${p.name} — ${p.category}. Buy online at The Rusti Shack; we ship worldwide from Apo Island.`,
   };
 }
 
@@ -62,13 +62,8 @@ export default async function ProductPage({
             <p className="pdp__cat">{p.category} · {p.subcategory}</p>
 
             <div className="pdp__price">
-              {isSellable(p) && p.price != null && (
+              {p.price != null && (
                 <span className="pdp__buy">${p.price.toFixed(2)}</span>
-              )}
-              {isRentable(p) && (
-                <span className="pdp__rent">
-                  or rent ${p.rentalRate?.toFixed(2)}<span className="atc__per">/day</span>
-                </span>
               )}
             </div>
 
@@ -91,13 +86,17 @@ export default async function ProductPage({
               name={p.name}
               image={p.image}
               price={p.price}
-              rentalRate={p.rentalRate}
-              availability={p.availability}
             />
 
             <p className="pdp__ship">
-              🐚 Grab it at the shop on Apo Island, or we&apos;ll ship it worldwide.
+              🐚 We ship worldwide from Apo Island.
             </p>
+            {isRentable(p) && (
+              <p className="pdp__ship pdp__ship--rent">
+                🏝️ Prefer to rent? This one&apos;s available by the day at the shop on
+                Apo Island — rentals aren&apos;t sold online.
+              </p>
+            )}
           </div>
         </div>
       </div>

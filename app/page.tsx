@@ -41,7 +41,7 @@ export default function Home() {
           <h1>Gear up for the reef.</h1>
           <p className="hero__sub">
             The Rusti Shack is the island&apos;s beach &amp; dive shop — snorkel gear,
-            surfboards, fishing tackle and beach essentials. Buy it, or rent it for the day.
+            surfboards, fishing tackle and beach essentials. Buy online, shipped worldwide.
           </p>
           <div className="hero__actions">
             <Link href="/shop" className="btn btn--primary">Browse the Shop</Link>
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="feature">
               <div className="feature__icon">🛍️</div>
               <h4>Buy or Rent</h4>
-              <p>Own your kit or grab it just for the day.</p>
+              <p>Buy online, or rent your gear when you&apos;re on the island.</p>
             </div>
             <div className="feature">
               <div className="feature__icon">🐢</div>
@@ -140,18 +140,18 @@ export default function Home() {
         <div className="container">
           <div className="split">
             <div>
-              <span className="eyebrow">Rent, don&apos;t lug</span>
+              <span className="eyebrow">Rent on the island</span>
               <h2 style={{ fontSize: "2rem", marginTop: 8 }}>Travelling light? Rent your gear.</h2>
               <p style={{ color: "var(--muted)", marginTop: 12 }}>
-                No need to fly with fins and a wetsuit. Pick up quality kit at the shop,
-                use it for the day, and drop it back on your way out. Most of our
-                Snorkel &amp; Dive and Surfing gear is available by the day.
+                No need to fly with fins and a wetsuit. Pick up quality kit at the shop
+                on Apo Island, use it for the day, and drop it back on your way out.
+                Rentals are in-person only — we don&apos;t rent online.
               </p>
               <ul>
                 <li><span>✓</span> Full snorkel sets from a few dollars a day</li>
                 <li><span>✓</span> Wetsuits, fins &amp; masks kept dive-shop clean</li>
                 <li><span>✓</span> Surfboards &amp; skimboards for every skill level</li>
-                <li><span>✓</span> Just show up — no booking required</li>
+                <li><span>✓</span> Just show up at the shop — no booking required</li>
               </ul>
               <Link href="/#visit" className="btn btn--primary" style={{ marginTop: 22 }}>
                 Find the Shop

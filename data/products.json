@@ -147,7 +147,8 @@
       }
     ],
     "image": "/products/APP-005.jpg",
-    "lifestyle": "/lifestyle/APP-005.jpg"
+    "lifestyle": "/lifestyle/APP-005.jpg",
+    "unitCost": 24.13
   },
   {
     "sku": "APP-004",
@@ -381,7 +382,8 @@
       }
     ],
     "image": "/products/APP-004.jpg",
-    "lifestyle": "/lifestyle/APP-004.jpg"
+    "lifestyle": "/lifestyle/APP-004.jpg",
+    "unitCost": 21.74
   },
   {
     "sku": "APP-003",
@@ -473,7 +475,8 @@
       }
     ],
     "image": "/products/APP-003.jpg",
-    "lifestyle": "/lifestyle/APP-003.jpg"
+    "lifestyle": "/lifestyle/APP-003.jpg",
+    "unitCost": 17.6
   },
   {
     "sku": "WET-002",
@@ -579,7 +582,8 @@
       }
     ],
     "image": "/products/WET-002.jpg",
-    "lifestyle": "/lifestyle/WET-002.jpg"
+    "lifestyle": "/lifestyle/WET-002.jpg",
+    "unitCost": 14.13
   },
   {
     "sku": "APP-006",
@@ -645,7 +649,8 @@
       }
     ],
     "image": "/products/APP-006.jpg",
-    "lifestyle": "/lifestyle/APP-006.jpg"
+    "lifestyle": "/lifestyle/APP-006.jpg",
+    "unitCost": 11.02
   },
   {
     "sku": "APP-002",
@@ -767,7 +772,8 @@
       }
     ],
     "image": "/products/APP-002.jpg",
-    "lifestyle": "/lifestyle/APP-002.jpg"
+    "lifestyle": "/lifestyle/APP-002.jpg",
+    "unitCost": 9.01
   },
   {
     "sku": "APP-001",
@@ -889,7 +895,8 @@
       }
     ],
     "image": "/products/APP-001.jpg",
-    "lifestyle": "/lifestyle/APP-001.jpg"
+    "lifestyle": "/lifestyle/APP-001.jpg",
+    "unitCost": 7.77
   },
   {
     "sku": "APP-007",
@@ -961,7 +968,8 @@
       }
     ],
     "image": "/products/APP-007.jpg",
-    "lifestyle": "/lifestyle/APP-007.jpg"
+    "lifestyle": "/lifestyle/APP-007.jpg",
+    "unitCost": 4.92
   },
   {
     "sku": "BCH-006",
@@ -982,7 +990,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-006.jpg",
-    "lifestyle": "/lifestyle/BCH-006.jpg"
+    "lifestyle": "/lifestyle/BCH-006.jpg",
+    "unitCost": 37.74
   },
   {
     "sku": "BCH-012",
@@ -1034,7 +1043,8 @@
       }
     ],
     "image": "/products/BCH-012.jpg",
-    "lifestyle": "/lifestyle/BCH-012.jpg"
+    "lifestyle": "/lifestyle/BCH-012.jpg",
+    "unitCost": 24.3
   },
   {
     "sku": "BCH-005",
@@ -1055,7 +1065,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-005.jpg",
-    "lifestyle": "/lifestyle/BCH-005.jpg"
+    "lifestyle": "/lifestyle/BCH-005.jpg",
+    "unitCost": 21.96
   },
   {
     "sku": "BCH-009",
@@ -1157,7 +1168,8 @@
       }
     ],
     "image": "/products/BCH-009.jpg",
-    "lifestyle": "/lifestyle/BCH-009.jpg"
+    "lifestyle": "/lifestyle/BCH-009.jpg",
+    "unitCost": 14.12
   },
   {
     "sku": "BCH-011",
@@ -1233,7 +1245,8 @@
       }
     ],
     "image": "/products/BCH-011.jpg",
-    "lifestyle": "/lifestyle/BCH-011.jpg"
+    "lifestyle": "/lifestyle/BCH-011.jpg",
+    "unitCost": 16.38
   },
   {
     "sku": "BCH-004",
@@ -1323,7 +1336,8 @@
       }
     ],
     "image": "/products/BCH-004.jpg",
-    "lifestyle": "/lifestyle/BCH-004.jpg"
+    "lifestyle": "/lifestyle/BCH-004.jpg",
+    "unitCost": 11.1
   },
   {
     "sku": "BCH-003",
@@ -1383,7 +1397,8 @@
       }
     ],
     "image": "/products/BCH-003.jpg",
-    "lifestyle": "/lifestyle/BCH-003.jpg"
+    "lifestyle": "/lifestyle/BCH-003.jpg",
+    "unitCost": 9.1
   },
   {
     "sku": "BCH-007",
@@ -1404,7 +1419,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-007.jpg",
-    "lifestyle": "/lifestyle/BCH-007.jpg"
+    "lifestyle": "/lifestyle/BCH-007.jpg",
+    "unitCost": 7.68
   },
   {
     "sku": "BCH-001",
@@ -1425,7 +1441,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-001.jpg",
-    "lifestyle": "/lifestyle/BCH-001.jpg"
+    "lifestyle": "/lifestyle/BCH-001.jpg",
+    "unitCost": 5.94
   },
   {
     "sku": "BCH-008",
@@ -1446,7 +1463,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-008.jpg",
-    "lifestyle": "/lifestyle/BCH-008.jpg"
+    "lifestyle": "/lifestyle/BCH-008.jpg",
+    "unitCost": 5.31
   },
   {
     "sku": "BCH-010",
@@ -1467,7 +1485,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-010.jpg",
-    "lifestyle": "/lifestyle/BCH-010.jpg"
+    "lifestyle": "/lifestyle/BCH-010.jpg",
+    "unitCost": 4.11
   },
   {
     "sku": "BCH-002",
@@ -1488,7 +1507,8 @@
     ],
     "variants": [],
     "image": "/products/BCH-002.jpg",
-    "lifestyle": "/lifestyle/BCH-002.jpg"
+    "lifestyle": "/lifestyle/BCH-002.jpg",
+    "unitCost": 1.8
   },
   {
     "sku": "FSH-001",
@@ -1509,7 +1529,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-001.jpg",
-    "lifestyle": "/lifestyle/FSH-001.jpg"
+    "lifestyle": "/lifestyle/FSH-001.jpg",
+    "unitCost": 41.68
   },
   {
     "sku": "FSH-003",
@@ -1530,7 +1551,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-003.jpg",
-    "lifestyle": "/lifestyle/FSH-003.jpg"
+    "lifestyle": "/lifestyle/FSH-003.jpg",
+    "unitCost": 36.01
   },
   {
     "sku": "FSH-002",
@@ -1551,7 +1573,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-002.jpg",
-    "lifestyle": "/lifestyle/FSH-002.jpg"
+    "lifestyle": "/lifestyle/FSH-002.jpg",
+    "unitCost": 27.83
   },
   {
     "sku": "FSH-004",
@@ -1572,7 +1595,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-004.jpg",
-    "lifestyle": "/lifestyle/FSH-004.jpg"
+    "lifestyle": "/lifestyle/FSH-004.jpg",
+    "unitCost": 22.14
   },
   {
     "sku": "FSH-008",
@@ -1593,7 +1617,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-008.jpg",
-    "lifestyle": "/lifestyle/FSH-008.jpg"
+    "lifestyle": "/lifestyle/FSH-008.jpg",
+    "unitCost": 17.92
   },
   {
     "sku": "FSH-007",
@@ -1614,7 +1639,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-007.jpg",
-    "lifestyle": "/lifestyle/FSH-007.jpg"
+    "lifestyle": "/lifestyle/FSH-007.jpg",
+    "unitCost": 9.38
   },
   {
     "sku": "FSH-006",
@@ -1635,7 +1661,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-006.jpg",
-    "lifestyle": "/lifestyle/FSH-006.jpg"
+    "lifestyle": "/lifestyle/FSH-006.jpg",
+    "unitCost": 3.21
   },
   {
     "sku": "FSH-005",
@@ -1656,7 +1683,8 @@
     ],
     "variants": [],
     "image": "/products/FSH-005.jpg",
-    "lifestyle": "/lifestyle/FSH-005.jpg"
+    "lifestyle": "/lifestyle/FSH-005.jpg",
+    "unitCost": 2.22
   },
   {
     "sku": "WET-001",
@@ -1758,7 +1786,8 @@
       }
     ],
     "image": "/products/WET-001.jpg",
-    "lifestyle": "/lifestyle/WET-001.jpg"
+    "lifestyle": "/lifestyle/WET-001.jpg",
+    "unitCost": 44.89
   },
   {
     "sku": "FIN-001",
@@ -1820,7 +1849,8 @@
       }
     ],
     "image": "/products/FIN-001.jpg",
-    "lifestyle": "/lifestyle/FIN-001.jpg"
+    "lifestyle": "/lifestyle/FIN-001.jpg",
+    "unitCost": 31.62
   },
   {
     "sku": "SNK-004",
@@ -1872,7 +1902,8 @@
       }
     ],
     "image": "/products/SNK-004.jpg",
-    "lifestyle": "/lifestyle/SNK-004.jpg"
+    "lifestyle": "/lifestyle/SNK-004.jpg",
+    "unitCost": 27.81
   },
   {
     "sku": "SNK-002",
@@ -1958,7 +1989,8 @@
       }
     ],
     "image": "/products/SNK-002.jpg",
-    "lifestyle": "/lifestyle/SNK-002.jpg"
+    "lifestyle": "/lifestyle/SNK-002.jpg",
+    "unitCost": 24.09
   },
   {
     "sku": "FIN-002",
@@ -2020,7 +2052,8 @@
       }
     ],
     "image": "/products/FIN-002.jpg",
-    "lifestyle": "/lifestyle/FIN-002.jpg"
+    "lifestyle": "/lifestyle/FIN-002.jpg",
+    "unitCost": 21.87
   },
   {
     "sku": "SNK-001",
@@ -2106,7 +2139,8 @@
       }
     ],
     "image": "/products/SNK-001.jpg",
-    "lifestyle": "/lifestyle/SNK-001.jpg"
+    "lifestyle": "/lifestyle/SNK-001.jpg",
+    "unitCost": 18.71
   },
   {
     "sku": "SNK-003",
@@ -2172,7 +2206,8 @@
       }
     ],
     "image": "/products/SNK-003.jpg",
-    "lifestyle": "/lifestyle/SNK-003.jpg"
+    "lifestyle": "/lifestyle/SNK-003.jpg",
+    "unitCost": 16.02
   },
   {
     "sku": "FIN-003",
@@ -2214,7 +2249,8 @@
       }
     ],
     "image": "/products/FIN-003.jpg",
-    "lifestyle": "/lifestyle/FIN-003.jpg"
+    "lifestyle": "/lifestyle/FIN-003.jpg",
+    "unitCost": 13.82
   },
   {
     "sku": "SNK-005",
@@ -2235,7 +2271,8 @@
     ],
     "variants": [],
     "image": "/products/SNK-005.jpg",
-    "lifestyle": "/lifestyle/SNK-005.jpg"
+    "lifestyle": "/lifestyle/SNK-005.jpg",
+    "unitCost": 11.91
   },
   {
     "sku": "KIT-001",
@@ -2295,7 +2332,8 @@
       }
     ],
     "image": "/products/KIT-001.jpg",
-    "lifestyle": "/lifestyle/KIT-001.jpg"
+    "lifestyle": "/lifestyle/KIT-001.jpg",
+    "unitCost": 420.3
   },
   {
     "sku": "SUR-002",
@@ -2316,7 +2354,8 @@
     ],
     "variants": [],
     "image": "/products/SUR-002.jpg",
-    "lifestyle": "/lifestyle/SUR-002.jpg"
+    "lifestyle": "/lifestyle/SUR-002.jpg",
+    "unitCost": 239.79
   },
   {
     "sku": "SUR-001",
@@ -2337,7 +2376,8 @@
     ],
     "variants": [],
     "image": "/products/SUR-001.jpg",
-    "lifestyle": "/lifestyle/SUR-001.jpg"
+    "lifestyle": "/lifestyle/SUR-001.jpg",
+    "unitCost": 180.22
   },
   {
     "sku": "SUR-003",
@@ -2389,7 +2429,8 @@
       }
     ],
     "image": "/products/SUR-003.jpg",
-    "lifestyle": "/lifestyle/SUR-003.jpg"
+    "lifestyle": "/lifestyle/SUR-003.jpg",
+    "unitCost": 110.15
   },
   {
     "sku": "KIT-002",
@@ -2451,7 +2492,8 @@
       }
     ],
     "image": "/products/KIT-002.jpg",
-    "lifestyle": "/lifestyle/KIT-002.jpg"
+    "lifestyle": "/lifestyle/KIT-002.jpg",
+    "unitCost": 54.67
   },
   {
     "sku": "SUR-006",
@@ -2493,7 +2535,8 @@
       }
     ],
     "image": "/products/SUR-006.jpg",
-    "lifestyle": "/lifestyle/SUR-006.jpg"
+    "lifestyle": "/lifestyle/SUR-006.jpg",
+    "unitCost": 37.87
   },
   {
     "sku": "SUR-004",
@@ -2555,7 +2598,8 @@
       }
     ],
     "image": "/products/SUR-004.jpg",
-    "lifestyle": "/lifestyle/SUR-004.jpg"
+    "lifestyle": "/lifestyle/SUR-004.jpg",
+    "unitCost": 8.14
   },
   {
     "sku": "SUR-005",
@@ -2576,6 +2620,7 @@
     ],
     "variants": [],
     "image": "/products/SUR-005.jpg",
-    "lifestyle": "/lifestyle/SUR-005.jpg"
+    "lifestyle": "/lifestyle/SUR-005.jpg",
+    "unitCost": 1.85
   }
 ]

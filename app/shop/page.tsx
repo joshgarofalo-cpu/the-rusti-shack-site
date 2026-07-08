@@ -6,7 +6,7 @@ import ProductCard from "../components/ProductCard";
 export const metadata: Metadata = {
   title: "Shop — The Rusti Shack",
   description:
-    "Browse every product at The Rusti Shack — snorkel & dive, surfing, beach essentials, fishing and apparel. Buy or rent by the day.",
+    "Browse every product at The Rusti Shack — snorkel & dive, surfing, beach essentials, fishing and apparel. Buy online, shipped worldwide from Apo Island.",
 };
 
 export default async function ShopPage({
@@ -29,8 +29,8 @@ export default async function ShopPage({
           <h1>{active ?? "Everything in the shack"}</h1>
           <p>
             {active
-              ? `${list.length} ${active} product${list.length === 1 ? "" : "s"} — buy or rent by the day.`
-              : `All ${products.length} products across five categories. Buy it, or rent it for the day.`}
+              ? `${list.length} ${active} product${list.length === 1 ? "" : "s"} — buy online, shipped worldwide.`
+              : `All ${products.length} products across five categories. Buy online — we ship worldwide.`}
           </p>
         </div>
       </section>

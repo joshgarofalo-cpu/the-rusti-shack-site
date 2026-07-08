@@ -8,7 +8,7 @@ import { CATEGORY_ORDER } from "./lib/catalog";
 export const metadata: Metadata = {
   title: "The Rusti Shack — Beach & Dive Shop on Apo Island",
   description:
-    "Snorkel gear, surf, fishing tackle, beach essentials and apparel — buy or rent it all at The Rusti Shack on Apo Island, Philippines.",
+    "Snorkel gear, surf, fishing tackle, beach essentials and apparel from The Rusti Shack on Apo Island, Philippines. Buy online, shipped worldwide.",
 };
 
 export default function RootLayout({
