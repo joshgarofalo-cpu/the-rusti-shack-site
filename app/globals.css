@@ -526,3 +526,18 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); }
   .mgr__stats { grid-template-columns: 1fr; }
   .mgr__head { flex-direction: column; align-items: flex-start; }
 }
+
+/* ---------- Back office: analytics sections ---------- */
+.mgr__section { margin-top: 36px; }
+.mgr__lead { color: var(--muted); margin: 4px 0 16px; max-width: 760px; }
+.mgr__two { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+.mgr__mini { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); margin-bottom: 10px; }
+.mgr__notice { margin-top: 20px; background: #fdf2e3; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; color: var(--coral-deep); }
+.mgr__notice code { background: #fff; padding: 1px 6px; border-radius: 6px; }
+.mbars { display: flex; flex-direction: column; gap: 8px; }
+.mbar { display: grid; grid-template-columns: 46px 1fr 84px; align-items: center; gap: 10px; }
+.mbar__label { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+.mbar__track { background: var(--sand); border-radius: 999px; height: 16px; overflow: hidden; }
+.mbar__fill { height: 100%; background: linear-gradient(90deg, var(--teal), var(--seafoam)); border-radius: 999px; min-width: 2px; }
+.mbar__val { font-size: 0.82rem; font-weight: 700; color: var(--navy); text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) { .mgr__two { grid-template-columns: 1fr; } }

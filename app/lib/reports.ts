@@ -1,32 +1,4 @@
-import { adminSelect } from "./supabase-admin";
-import { getAllProducts } from "./catalog";
-import type {
-  OrderRecord,
-  OrderLineRecord,
-  CustomerCore,
-} from "./orders";
-
-export type ManagerData = {
-  orders: OrderRecord[]; // newest first
-  lines: OrderLineRecord[];
-  core: CustomerCore[];
-  productName: Map<string, string>;
-};
-
-export async function fetchManagerData(): Promise<ManagerData> {
-  const [orders, lines, core, products] = await Promise.all([
-    adminSelect<OrderRecord[]>("Orders?select=*&order=OrderID.desc"),
-    adminSelect<OrderLineRecord[]>("OrderLines?select=*&order=OrderID,LineNumber"),
-    adminSelect<CustomerCore[]>("Customers_Core?select=*"),
-    getAllProducts(),
-  ]);
-  return {
-    orders,
-    lines,
-    core,
-    productName: new Map(products.map((p) => [p.sku, p.name])),
-  };
-}
+import { adminSelectAll } from "./supabase-admin";
 
 /* ---------- CSV helpers ---------- */
 function cell(v: unknown): string {
@@ -43,48 +15,43 @@ export function toCSV(headers: string[], rows: unknown[][]): string {
   return "﻿" + out.join("\r\n"); // BOM so Excel reads UTF-8 correctly
 }
 
-/** The headline export: one row per item sold, with columns Rusti recognizes. */
+/** Headline export: one row per item sold, joined server-side in a view. */
 export async function salesCSV(): Promise<string> {
-  const { orders, lines, core, productName } = await fetchManagerData();
-  const orderById = new Map(orders.map((o) => [o.OrderID, o]));
-  const custById = new Map(core.map((c) => [c.CustomerID, c]));
-
   const headers = [
     "OrderID", "OrderDate", "FirstName", "LastName", "Country",
     "ProductCode", "ProductName", "Quantity", "UnitPrice", "LineRevenue",
     "ShippingFee", "OrderTotal", "PaymentMethod",
   ];
-  const rows = lines.map((l) => {
-    const o = orderById.get(l.OrderID);
-    const c = o ? custById.get(o.CustID) : undefined;
-    return [
-      l.OrderID, o?.OrderDate, c?.FirstName, c?.LastName, c?.Country,
-      l.ProductCode, productName.get(l.ProductCode) ?? "", l.Quantity, l.UnitPrice, l.LineRevenue,
-      o?.ShippingFee, o?.OrderTotal, o?.PaymentMethod,
-    ];
-  });
-  return toCSV(headers, rows);
+  const rows = await adminSelectAll<Record<string, unknown>>(
+    `v_mgmt_sales_export?select=${headers.join(",")}&order=OrderID`
+  );
+  return toCSV(headers, rows.map((r) => headers.map((h) => r[h])));
 }
 
-/* ---------- Extra credit: raw per-table exports ---------- */
+/* ---------- Raw per-table exports (the "everything" downloads) ---------- */
 const TABLES: Record<string, { path: string; cols: string[]; file: string }> = {
   orders: {
-    path: "Orders?select=*&order=OrderID",
+    path: "Orders?order=OrderID",
     cols: ["OrderID", "OrderDate", "CustID", "LocationID", "SalesAssociate", "Channel", "ShippingFee", "OrderTotal", "PaymentMethod"],
     file: "orders.csv",
   },
   orderlines: {
-    path: "OrderLines?select=*&order=OrderID,LineNumber",
+    path: "OrderLines?order=OrderID,LineNumber",
     cols: ["OrderID", "LineNumber", "ProductCode", "Quantity", "UnitPrice", "DiscountPct", "LineRevenue", "LineCost", "EffectiveDiscountAmount"],
     file: "order-lines.csv",
   },
+  rentals: {
+    path: "RentalTransactions?order=RentalID",
+    cols: ["RentalID", "RentalDate", "CustID", "LocationID", "SalesAssociate", "SKU", "Quantity", "DailyRate", "RentalRevenue", "Returned"],
+    file: "rentals.csv",
+  },
   customers_core: {
-    path: "Customers_Core?select=*&order=CustomerID",
+    path: "Customers_Core?order=CustomerID",
     cols: ["CustomerID", "FirstName", "LastName", "CustomerType", "JoinDate", "City", "Country"],
     file: "customers-core.csv",
   },
   customers_contact: {
-    path: "Customers_Contact?select=*&order=CustomerID",
+    path: "Customers_Contact?order=CustomerID",
     cols: ["CustomerID", "Email", "Phone", "LoyaltyMember", "StreetAddress", "Region", "PostalCode"],
     file: "customers-contact.csv",
   },
@@ -95,6 +62,9 @@ export async function tableCSV(
 ): Promise<{ csv: string; file: string } | null> {
   const t = TABLES[key];
   if (!t) return null;
-  const rows = await adminSelect<Record<string, unknown>[]>(t.path);
+  const sep = t.path.includes("?") ? "&" : "?";
+  const rows = await adminSelectAll<Record<string, unknown>>(
+    `${t.path}${sep}select=${t.cols.join(",")}`
+  );
   return { csv: toCSV(t.cols, rows.map((r) => t.cols.map((c) => r[c]))), file: t.file };
 }

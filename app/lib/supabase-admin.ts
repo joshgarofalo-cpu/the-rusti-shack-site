@@ -42,6 +42,24 @@ export async function adminSelect<T>(pathAndQuery: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+/** Fetch every row, paging past PostgREST's 1000-row cap via Range headers. */
+export async function adminSelectAll<T>(pathAndQuery: string): Promise<T[]> {
+  const PAGE = 1000;
+  let from = 0;
+  const all: T[] = [];
+  for (;;) {
+    const res = await admin(pathAndQuery, {
+      method: "GET",
+      headers: { Range: `${from}-${from + PAGE - 1}` },
+    });
+    const chunk = (await res.json()) as T[];
+    all.push(...chunk);
+    if (chunk.length < PAGE) break;
+    from += PAGE;
+  }
+  return all;
+}
+
 export async function adminInsert<T>(table: string, rows: unknown[]): Promise<T> {
   const res = await admin(table, {
     method: "POST",

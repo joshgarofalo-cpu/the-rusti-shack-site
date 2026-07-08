@@ -12,7 +12,7 @@ export function ManagerLogin({ configured }: { configured: boolean }) {
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch("/api/manager/login", {
+      const res = await fetch("/api/management/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
@@ -61,7 +61,7 @@ export function ManagerLogin({ configured }: { configured: boolean }) {
 
 export function LogoutButton() {
   async function logout() {
-    await fetch("/api/manager/logout", { method: "POST" });
+    await fetch("/api/management/logout", { method: "POST" });
     window.location.reload();
   }
   return (
