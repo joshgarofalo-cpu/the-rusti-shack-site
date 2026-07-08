@@ -1,54 +1,25 @@
 import Link from "next/link";
-import products from "../data/products.json";
-import categories from "../data/categories.json";
-
-type Product = (typeof products)[number];
-
-const CATEGORY_INFO: Record<
-  string,
-  { blurb: string; image: string }
-> = {
-  "Snorkel & Dive": {
-    blurb: "Masks, fins, snorkels & wetsuits for exploring the reef.",
-    image: "/lifestyle/SNK-001.jpg",
-  },
-  Surfing: {
-    blurb: "Boards, skimboards & kitesurf gear for every swell.",
-    image: "/lifestyle/SUR-003.jpg",
-  },
-  "Beach Essentials": {
-    blurb: "Towels, shade, coolers, sunnies & reef-safe sun care.",
-    image: "/lifestyle/BCH-005.jpg",
-  },
-  Fishing: {
-    blurb: "Rods, reels, tackle & fresh bait for the day's catch.",
-    image: "/lifestyle/FSH-001.jpg",
-  },
-  Apparel: {
-    blurb: "Rashguards, tees, hats & swimwear built for salt & sun.",
-    image: "/lifestyle/APP-004.jpg",
-  },
-};
+import {
+  products,
+  categories,
+  CATEGORY_ORDER,
+  CATEGORY_IMAGE,
+  CATEGORY_BLURB,
+  getProduct,
+  type Product,
+} from "./lib/catalog";
+import ProductCard from "./components/ProductCard";
 
 /* Semi-transparent scrim over a photo so white text stays legible. */
 const CARD_SCRIM =
   "linear-gradient(to top, rgba(9,30,45,0.92) 0%, rgba(9,30,45,0.45) 45%, rgba(9,30,45,0.15) 100%)";
-
-const CATEGORY_ORDER = [
-  "Snorkel & Dive",
-  "Surfing",
-  "Beach Essentials",
-  "Fishing",
-  "Apparel",
-];
 
 const FEATURED_SKUS = [
   "SNK-002", "FIN-001", "WET-001", "SUR-003",
   "BCH-005", "BCH-003", "FSH-001", "APP-001",
 ];
 
-const bySku = new Map(products.map((p) => [p.sku, p]));
-const featured = FEATURED_SKUS.map((s) => bySku.get(s)).filter(
+const featured = FEATURED_SKUS.map(getProduct).filter(
   (p): p is Product => Boolean(p)
 );
 
@@ -73,7 +44,7 @@ export default function Home() {
             surfboards, fishing tackle and beach essentials. Buy it, or rent it for the day.
           </p>
           <div className="hero__actions">
-            <Link href="/#shop" className="btn btn--primary">Browse the Shop</Link>
+            <Link href="/shop" className="btn btn--primary">Browse the Shop</Link>
             <Link href="/apo-island" className="btn btn--ghost">Discover Apo Island</Link>
           </div>
         </div>
@@ -125,17 +96,16 @@ export default function Home() {
           </div>
           <div className="grid grid--3">
             {CATEGORY_ORDER.map((name) => {
-              const info = CATEGORY_INFO[name];
               const meta = catBy.get(name);
               return (
                 <Link
                   key={name}
-                  href="/#featured"
+                  href={`/shop?category=${encodeURIComponent(name)}`}
                   className="cat-card"
-                  style={{ backgroundImage: `${CARD_SCRIM}, url(${info.image})` }}
+                  style={{ backgroundImage: `${CARD_SCRIM}, url(${CATEGORY_IMAGE[name]})` }}
                 >
                   <h3>{name}</h3>
-                  <p>{info.blurb}</p>
+                  <p>{CATEGORY_BLURB[name]}</p>
                   <div className="cat-card__meta">
                     {meta?.count} products · from ${meta?.priceLow.toFixed(2)}
                   </div>
@@ -156,26 +126,11 @@ export default function Home() {
           </div>
           <div className="grid grid--4">
             {featured.map((p) => (
-              <article key={p.sku} className="prod-card">
-                <div className="prod-card__img">
-                  {p.image ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={p.image} alt={p.name} loading="lazy" />
-                  ) : null}
-                </div>
-                <div className="prod-card__body">
-                  <span className="prod-card__badge">{p.subcategory}</span>
-                  <h3>{p.name}</h3>
-                  <p className="prod-card__sub">{p.category}</p>
-                  <div className="prod-card__foot">
-                    <span className="prod-card__price">${p.price?.toFixed(2)}</span>
-                    {p.rentalRate ? (
-                      <span className="prod-card__rent">rent ${p.rentalRate.toFixed(2)}/day</span>
-                    ) : null}
-                  </div>
-                </div>
-              </article>
+              <ProductCard key={p.sku} product={p} />
             ))}
+          </div>
+          <div style={{ textAlign: "center", marginTop: 36 }}>
+            <Link href="/shop" className="btn btn--primary">Shop all {products.length} products</Link>
           </div>
         </div>
       </section>
