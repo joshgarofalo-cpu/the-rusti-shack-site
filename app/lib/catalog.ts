@@ -1,5 +1,4 @@
-import productsData from "@/data/products.json";
-import categoriesData from "@/data/categories.json";
+import { sbSelect } from "./supabase";
 
 export type Variant = {
   sku: string;
@@ -34,18 +33,12 @@ export type Product = {
   lifestyle: string | null;
 };
 
-export type Category = {
+export type CategoryMeta = {
   name: string;
   count: number;
-  variantCount: number;
-  photoCount: number;
   priceLow: number;
   priceHigh: number;
-  rentable: number;
 };
-
-export const products = productsData as Product[];
-export const categories = categoriesData as Category[];
 
 /* Display order used across the site. */
 export const CATEGORY_ORDER = [
@@ -73,14 +66,42 @@ export const CATEGORY_BLURB: Record<string, string> = {
   Apparel: "Rashguards, tees, hats & swimwear built for salt & sun.",
 };
 
-export function getProduct(sku: string): Product | undefined {
-  return products.find((p) => p.sku === sku);
+// PostgREST select: alias snake_case DB columns back to the app's camelCase.
+const SELECT =
+  "sku,name,category,subcategory,price,unitCost:unit_cost,rentalRate:rental_rate," +
+  "availability,supplier,yearIntroduced:year_introduced,type,image,lifestyle,colors,variants";
+
+/** Every product, ordered by price (high to low). */
+export async function getAllProducts(): Promise<Product[]> {
+  return sbSelect<Product[]>(`products?select=${SELECT}&order=price.desc.nullslast`);
 }
 
-export function productsByCategory(category: string): Product[] {
-  return products
-    .filter((p) => p.category === category)
-    .sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
+export async function getProduct(sku: string): Promise<Product | undefined> {
+  const rows = await sbSelect<Product[]>(
+    `products?sku=eq.${encodeURIComponent(sku)}&select=${SELECT}&limit=1`
+  );
+  return rows[0];
+}
+
+export async function getProductsByCategory(category: string): Promise<Product[]> {
+  return sbSelect<Product[]>(
+    `products?category=eq.${encodeURIComponent(category)}&select=${SELECT}&order=price.desc.nullslast`
+  );
+}
+
+/** Category cards/counters, derived from the live catalog. */
+export async function getCategories(): Promise<CategoryMeta[]> {
+  const products = await getAllProducts();
+  return CATEGORY_ORDER.map((name) => {
+    const inCat = products.filter((p) => p.category === name);
+    const prices = inCat.map((p) => p.price ?? 0).filter((n) => n > 0);
+    return {
+      name,
+      count: inCat.length,
+      priceLow: prices.length ? Math.min(...prices) : 0,
+      priceHigh: prices.length ? Math.max(...prices) : 0,
+    };
+  });
 }
 
 /** Can this item be bought? */

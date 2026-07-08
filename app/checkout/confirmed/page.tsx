@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getWebOrder } from "../../lib/webstore";
-import { getProduct } from "../../lib/catalog";
+import { getAllProducts } from "../../lib/catalog";
 
 export const metadata = { title: "Order confirmed — The Rusti Shack" };
 
@@ -28,6 +28,8 @@ export default async function ConfirmedPage({
   }
 
   const { order, lines } = found;
+  const products = await getAllProducts();
+  const nameBySku = new Map(products.map((p) => [p.sku, p.name]));
 
   return (
     <main>
@@ -78,7 +80,7 @@ export default async function ConfirmedPage({
                 {lines.map((l) => (
                   <tr key={l.LineNumber}>
                     <td>{l.ProductCode}</td>
-                    <td>{getProduct(l.ProductCode)?.name ?? "—"}</td>
+                    <td>{nameBySku.get(l.ProductCode) ?? "—"}</td>
                     <td>{l.Quantity}</td>
                     <td>${l.UnitPrice.toFixed(2)}</td>
                     <td>{l.DiscountPct}%</td>

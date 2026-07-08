@@ -1,12 +1,10 @@
 import Link from "next/link";
 import {
-  products,
-  categories,
+  getAllProducts,
+  getCategories,
   CATEGORY_ORDER,
   CATEGORY_IMAGE,
   CATEGORY_BLURB,
-  getProduct,
-  type Product,
 } from "./lib/catalog";
 import ProductCard from "./components/ProductCard";
 
@@ -19,13 +17,17 @@ const FEATURED_SKUS = [
   "BCH-005", "BCH-003", "FSH-001", "APP-001",
 ];
 
-const featured = FEATURED_SKUS.map(getProduct).filter(
-  (p): p is Product => Boolean(p)
-);
+export default async function Home() {
+  const [products, categories] = await Promise.all([
+    getAllProducts(),
+    getCategories(),
+  ]);
+  const bySku = new Map(products.map((p) => [p.sku, p]));
+  const featured = FEATURED_SKUS.map((s) => bySku.get(s)).filter(
+    (p): p is NonNullable<typeof p> => Boolean(p)
+  );
+  const catBy = new Map(categories.map((c) => [c.name, c]));
 
-const catBy = new Map(categories.map((c) => [c.name, c]));
-
-export default function Home() {
   return (
     <main>
       {/* ---------- Hero ---------- */}

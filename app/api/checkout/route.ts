@@ -53,7 +53,7 @@ export async function POST(request: Request) {
   }
   const lines = [];
   for (const item of body.items) {
-    const p = getProduct(item.sku);
+    const p = await getProduct(item.sku);
     const qty = Math.floor(Number(item.qty));
     if (!p || !isSellable(p) || p.price == null) {
       return NextResponse.json(

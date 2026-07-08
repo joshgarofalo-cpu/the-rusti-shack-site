@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products, getProduct, isRentable } from "../../lib/catalog";
+import { getAllProducts, getProduct, isRentable } from "../../lib/catalog";
 import AddToCart from "../../components/AddToCart";
 import AvailabilityBadge from "../../components/AvailabilityBadge";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const products = await getAllProducts();
   return products.map((p) => ({ sku: p.sku }));
 }
 
@@ -15,7 +16,7 @@ export async function generateMetadata({
   params: Promise<{ sku: string }>;
 }): Promise<Metadata> {
   const { sku } = await params;
-  const p = getProduct(sku);
+  const p = await getProduct(sku);
   if (!p) return { title: "Not found — The Rusti Shack" };
   return {
     title: `${p.name} — The Rusti Shack`,
@@ -29,7 +30,7 @@ export default async function ProductPage({
   params: Promise<{ sku: string }>;
 }) {
   const { sku } = await params;
-  const p = getProduct(sku);
+  const p = await getProduct(sku);
   if (!p) notFound();
 
   const sizes = [...new Set(p.variants.map((v) => v.size).filter(Boolean))];

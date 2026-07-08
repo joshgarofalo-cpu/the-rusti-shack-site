@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { products, CATEGORY_ORDER } from "../lib/catalog";
+import { getAllProducts, CATEGORY_ORDER } from "../lib/catalog";
 import ProductCard from "../components/ProductCard";
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ export default async function ShopPage({
   const { category } = await searchParams;
   const active = category && CATEGORY_ORDER.includes(category) ? category : null;
 
+  const products = await getAllProducts();
   const list = (active ? products.filter((p) => p.category === active) : products)
     .slice()
     .sort((a, b) => (b.price ?? 0) - (a.price ?? 0));
