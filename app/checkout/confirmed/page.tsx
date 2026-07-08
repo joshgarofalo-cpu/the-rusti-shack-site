@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getWebOrder } from "../../lib/webstore";
 import { getAllProducts } from "../../lib/catalog";
+import ClearCartOnMount from "../../components/ClearCartOnMount";
 
 export const metadata = { title: "Order confirmed — The Rusti Shack" };
 
@@ -35,14 +36,15 @@ export default async function ConfirmedPage({
     <main>
       <div className="container">
         <div className="confirm">
+          <ClearCartOnMount />
           <div style={{ fontSize: "3rem" }}>🐢</div>
           <h1>Salamat! Your order&apos;s in.</h1>
           <p className="confirm__code">
             Order <strong>{order.OrderID}</strong> · {order.OrderDate}
           </p>
           <p className="confirm__note">
-            Test mode — no payment was taken yet. Here&apos;s exactly what we recorded,
-            in the same shape as the shop&apos;s books.
+            Test-mode payment succeeded — no real money moved. Here&apos;s exactly what
+            we recorded, in the same shape as the shop&apos;s books.
           </p>
 
           <div className="confirm__grid">

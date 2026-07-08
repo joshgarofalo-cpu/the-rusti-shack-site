@@ -84,6 +84,20 @@ export async function createWebOrder(p: CheckoutPayload): Promise<CreatedOrder> 
   return { order, lines: orderLines, custId, isNewCustomer: isNew };
 }
 
+/** Idempotency: has this Stripe session already produced an order? */
+export async function orderForSession(sessionId: string): Promise<string | null> {
+  const rows = await adminSelect<{ order_id: string }[]>(
+    `web_checkout_sessions?session_id=eq.${encodeURIComponent(sessionId)}&select=order_id&limit=1`
+  );
+  return rows[0]?.order_id ?? null;
+}
+
+export async function recordSessionOrder(sessionId: string, orderId: string): Promise<void> {
+  await adminInsert("web_checkout_sessions", [
+    { session_id: sessionId, order_id: orderId },
+  ]);
+}
+
 export type ShipTo = {
   name: string;
   street: string;

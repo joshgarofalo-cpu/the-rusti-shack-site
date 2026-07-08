@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { getProduct, isSellable } from "../../lib/catalog";
-import { createWebOrder, type CheckoutPayload } from "../../lib/webstore";
+import { resolveCartLines } from "../../lib/pricing";
+import { shippingFee, round2 } from "../../lib/orders";
+import { createCheckoutSession, stripeConfigured } from "../../lib/stripe";
 
 type Incoming = {
   firstName?: string;
@@ -35,7 +36,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  // Validate contact + address fields.
   const missing = required.filter((k) => !String(body[k] ?? "").trim());
   if (missing.length) {
     return NextResponse.json(
@@ -46,55 +46,72 @@ export async function POST(request: Request) {
   if (!/^\S+@\S+\.\S+$/.test(body.email!.trim())) {
     return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 });
   }
-
-  // Re-derive every line from the catalog on the server — never trust client prices.
-  if (!body.items?.length) {
-    return NextResponse.json({ error: "Your cart is empty." }, { status: 400 });
+  if (!stripeConfigured()) {
+    return NextResponse.json(
+      { error: "Payments aren't configured yet (missing STRIPE_SECRET_KEY)." },
+      { status: 503 }
+    );
   }
-  const lines = [];
-  for (const item of body.items) {
-    const p = await getProduct(item.sku);
-    const qty = Math.floor(Number(item.qty));
-    if (!p || !isSellable(p) || p.price == null) {
-      return NextResponse.json(
-        { error: `Item not available for online purchase: ${item.sku}` },
-        { status: 400 }
-      );
-    }
-    if (!Number.isFinite(qty) || qty < 1) {
-      return NextResponse.json({ error: `Bad quantity for ${item.sku}` }, { status: 400 });
-    }
-    lines.push({
-      sku: p.sku,
-      quantity: qty,
-      unitPrice: p.price,
-      unitCost: p.unitCost ?? 0,
+
+  // Price the cart on the server, then hand the amounts to Stripe.
+  let lines;
+  try {
+    lines = await resolveCartLines(body.items ?? []);
+  } catch (e) {
+    return NextResponse.json({ error: (e as Error).message }, { status: 400 });
+  }
+
+  const subtotal = round2(lines.reduce((s, l) => s + l.unitPrice * l.quantity, 0));
+  const ship = shippingFee(subtotal);
+
+  const line_items: Record<string, unknown>[] = lines.map((l) => ({
+    quantity: l.quantity,
+    price_data: {
+      currency: "usd",
+      unit_amount: Math.round(l.unitPrice * 100),
+      product_data: { name: l.name },
+    },
+  }));
+  if (ship > 0) {
+    line_items.push({
+      quantity: 1,
+      price_data: {
+        currency: "usd",
+        unit_amount: Math.round(ship * 100),
+        product_data: { name: "Worldwide shipping" },
+      },
     });
   }
 
-  const payload: CheckoutPayload = {
-    firstName: body.firstName!,
-    lastName: body.lastName!,
-    email: body.email!,
-    phone: body.phone!,
-    street: body.street!,
-    city: body.city!,
-    region: body.region ?? "",
-    postalCode: body.postalCode!,
-    country: body.country!,
-    loyalty: Boolean(body.loyalty),
-    lines,
+  const origin = request.headers.get("origin") || new URL(request.url).origin;
+
+  // Everything the success handler needs to write the order, carried on the session.
+  const metadata: Record<string, string> = {
+    firstName: body.firstName!.trim(),
+    lastName: body.lastName!.trim(),
+    email: body.email!.trim(),
+    phone: body.phone!.trim(),
+    street: body.street!.trim(),
+    city: body.city!.trim(),
+    region: (body.region ?? "").trim(),
+    postalCode: body.postalCode!.trim(),
+    country: body.country!.trim(),
+    loyalty: body.loyalty ? "1" : "0",
+    items: lines.map((l) => `${l.sku}:${l.quantity}`).join(","),
   };
 
   try {
-    const created = await createWebOrder(payload);
-    return NextResponse.json({
-      orderId: created.order.OrderID,
-      total: created.order.OrderTotal,
-      shippingFee: created.order.ShippingFee,
+    const session = await createCheckoutSession({
+      mode: "payment",
+      customer_email: body.email!.trim(),
+      line_items,
+      metadata,
+      success_url: `${origin}/checkout/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/cart`,
     });
+    return NextResponse.json({ url: session.url });
   } catch (e) {
-    console.error("checkout failed", e);
-    return NextResponse.json({ error: "Could not place the order." }, { status: 500 });
+    console.error("stripe session failed", e);
+    return NextResponse.json({ error: "Could not start payment." }, { status: 500 });
   }
 }

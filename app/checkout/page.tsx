@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useCart } from "../components/CartContext";
 import { shippingFee, FREE_SHIPPING_OVER } from "../lib/orders";
@@ -29,8 +28,7 @@ const FIELDS: Field[] = [
 type FormState = Record<string, string>;
 
 export default function CheckoutPage() {
-  const { items, total, clear } = useCart();
-  const router = useRouter();
+  const { items, total } = useCart();
   const [form, setForm] = useState<FormState>({});
   const [loyalty, setLoyalty] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -69,13 +67,14 @@ export default function CheckoutPage() {
         }),
       });
       const data = await res.json();
-      if (!res.ok) {
+      if (!res.ok || !data.url) {
         setError(data.error || "Something went wrong.");
         setSubmitting(false);
         return;
       }
-      clear();
-      router.push(`/checkout/confirmed?order=${data.orderId}`);
+      // Hand off to Stripe's hosted checkout. The cart is cleared on the
+      // confirmation page once payment succeeds, so it survives a cancel.
+      window.location.href = data.url;
     } catch {
       setError("Could not reach the shop. Please try again.");
       setSubmitting(false);
@@ -149,10 +148,10 @@ export default function CheckoutPage() {
               <p className="cart__hint">Free worldwide shipping over ${FREE_SHIPPING_OVER}.</p>
             )}
             <button className="btn btn--primary cart__checkout" disabled={submitting}>
-              {submitting ? "Placing order…" : "Place order"}
+              {submitting ? "Redirecting to payment…" : "Continue to payment"}
             </button>
             <p className="cart__demo">
-              Test mode — card payment is added next. No charge yet.
+              Secure payment by Stripe. Test mode — use card 4242 4242 4242 4242.
             </p>
           </aside>
         </form>
