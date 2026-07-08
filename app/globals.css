@@ -541,3 +541,39 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); }
 .mbar__fill { height: 100%; background: linear-gradient(90deg, var(--teal), var(--seafoam)); border-radius: 999px; min-width: 2px; }
 .mbar__val { font-size: 0.82rem; font-weight: 700; color: var(--navy); text-align: right; font-variant-numeric: tabular-nums; }
 @media (max-width: 720px) { .mgr__two { grid-template-columns: 1fr; } }
+
+/* ---------- Forecast studio ---------- */
+.fc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.fc-info { flex: none; width: 34px; height: 34px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--teal); font-size: 1.05rem; cursor: pointer; }
+.fc-info:hover { border-color: var(--teal); background: #eaf6fb; }
+.fc-controls { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; margin: 16px 0 10px; }
+.fc-models { display: flex; gap: 8px; flex-wrap: wrap; }
+.fc-model { border: 1.5px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 0.9rem; color: var(--ink); cursor: pointer; display: inline-flex; gap: 6px; align-items: baseline; }
+.fc-model.is-active { border-color: var(--teal); background: #eaf6fb; color: var(--navy); }
+.fc-model-err { font-size: 0.75rem; color: var(--muted); font-weight: 700; }
+.fc-horizon { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--muted); }
+.fc-horizon strong { color: var(--navy); }
+.fc-horizon input[type="range"] { accent-color: var(--teal); width: 180px; }
+.fc-chart { width: 100%; height: auto; display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 8px; }
+.fc-grid { stroke: #eee4cf; stroke-width: 1; }
+.fc-ytick { fill: var(--muted); font-size: 11px; text-anchor: end; }
+.fc-xtick { fill: var(--muted); font-size: 11px; }
+.fc-band { fill: rgba(26,127,168,0.16); stroke: none; }
+.fc-hist { fill: none; stroke: var(--navy); stroke-width: 2.5; stroke-linejoin: round; }
+.fc-fore { fill: none; stroke: var(--coral); stroke-width: 2.5; stroke-dasharray: 6 5; stroke-linejoin: round; }
+.fc-now { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.6; }
+.fc-legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 12px; font-size: 0.86rem; color: var(--muted); align-items: center; }
+.fc-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.fc-sw { width: 18px; height: 4px; border-radius: 2px; display: inline-block; }
+.fc-sw--hist { background: var(--navy); }
+.fc-sw--fore { background: var(--coral); height: 0; border-top: 3px dashed var(--coral); }
+.fc-sw--band { background: rgba(26,127,168,0.24); height: 12px; border-radius: 3px; }
+.fc-legend__note { margin-left: auto; font-weight: 600; }
+.fc-modal { position: fixed; inset: 0; background: rgba(9,30,45,0.5); display: flex; align-items: center; justify-content: center; padding: 20px; z-index: 100; }
+.fc-modal__box { background: #fff; border-radius: 18px; max-width: 520px; padding: 26px 28px; box-shadow: var(--shadow); }
+.fc-modal__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.fc-modal__head h3 { font-size: 1.2rem; font-weight: 800; }
+.fc-modal__head button { border: none; background: transparent; font-size: 1.1rem; cursor: pointer; color: var(--muted); }
+.fc-modal__box p { color: var(--ink); margin-top: 10px; line-height: 1.6; }
+.fc-modal__err { color: var(--muted); font-size: 0.92rem; }
+@media (max-width: 640px) { .fc-horizon input[type="range"] { width: 120px; } .fc-legend__note { margin-left: 0; width: 100%; } }

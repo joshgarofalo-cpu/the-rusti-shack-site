@@ -5,8 +5,9 @@ import { ManagerLogin, LogoutButton } from "./ManagerClient";
 import {
   getTotals, getMonthly, getProducts, getCategories, getCustomerTypes,
   getRentalProducts, getLast7, getRecentOrders,
-  byYear, seasonality, forecastNextQuarter,
+  byYear, seasonality, forecastSeries,
 } from "../lib/management";
+import ForecastStudio from "./ForecastStudio";
 
 export const dynamic = "force-dynamic";
 
@@ -59,7 +60,7 @@ export default async function ManagementPage() {
     A = null;
   }
 
-  const forecast = A ? forecastNextQuarter(A.monthly) : null;
+  const revSeries = A ? forecastSeries(A.monthly) : [];
   const years = A ? byYear(A.monthly) : [];
   const season = A ? seasonality(A.monthly) : [];
   const topMargin = A ? [...A.products].sort((a, b) => b.margin - a.margin).slice(0, 6) : [];
@@ -132,28 +133,8 @@ export default async function ManagementPage() {
 
         {A && (
           <>
-            {/* Forecast */}
-            {forecast && (
-              <section className="mgr__section">
-                <h2 className="mgr__h2">Next quarter outlook</h2>
-                <p className="mgr__lead">
-                  Projected <strong>{money(forecast.salesTotal)}</strong> in sales and{" "}
-                  <strong>{money(forecast.rentalTotal)}</strong> in rentals over the next three months —
-                  the average of those months across {forecast.years} full years of history, adjusted for a{" "}
-                  {forecast.growthPct >= 0 ? "+" : ""}{forecast.growthPct.toFixed(0)}%/yr trend.
-                </p>
-                <div className="mgr__table-wrap">
-                  <table className="mgr__table">
-                    <thead><tr><th>Month</th><th className="right">Projected sales</th><th className="right">Projected rentals</th></tr></thead>
-                    <tbody>
-                      {forecast.months.map((m) => (
-                        <tr key={m.label}><td>{m.label}</td><td className="right">{money(m.sales)}</td><td className="right">{money(m.rental)}</td></tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </section>
-            )}
+            {/* Forecasting studio — the heart of the back office */}
+            <ForecastStudio series={revSeries} />
 
             {/* Revenue by year — sales vs rentals (helping or cannibalizing?) */}
             <section className="mgr__section">

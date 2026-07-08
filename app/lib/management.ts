@@ -84,6 +84,21 @@ export function seasonality(monthly: Monthly[]) {
   }));
 }
 
+/** Monthly revenue series for forecasting, dropping the trailing partial/outlier
+ *  month(s) — e.g. a just-started month with a single online order — so the models
+ *  project from the last complete month of trading. */
+export function forecastSeries(monthly: Monthly[]): { ym: string; value: number }[] {
+  let s = monthly.map((m) => ({ ym: m.ym, value: m.sales_rev }));
+  while (s.length > 13) {
+    const last = s[s.length - 1].value;
+    const w = s.slice(-13, -1).map((p) => p.value).sort((a, b) => a - b);
+    const med = w[Math.floor(w.length / 2)] || 0;
+    if (med > 0 && last < 0.25 * med) s = s.slice(0, -1);
+    else break;
+  }
+  return s;
+}
+
 export type Forecast = {
   growthPct: number;
   years: number;
