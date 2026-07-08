@@ -27,7 +27,7 @@ export default async function ConfirmedPage({
     );
   }
 
-  const { order, lines } = found;
+  const { order, lines, shipTo } = found;
   const products = await getAllProducts();
   const nameBySku = new Map(products.map((p) => [p.sku, p.name]));
 
@@ -62,10 +62,10 @@ export default async function ConfirmedPage({
             <section className="confirm__card">
               <h2>Ship to</h2>
               <address className="confirm__addr">
-                {order.ShipName}<br />
-                {order.ShipStreet}<br />
-                {order.ShipCity}{order.ShipRegion ? `, ${order.ShipRegion}` : ""} {order.ShipPostalCode}<br />
-                {order.ShipCountry}
+                {shipTo.name}<br />
+                {shipTo.street}<br />
+                {shipTo.city}{shipTo.region ? `, ${shipTo.region}` : ""} {shipTo.postalCode}<br />
+                {shipTo.country}
               </address>
             </section>
           </div>
