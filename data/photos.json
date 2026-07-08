@@ -1,0 +1,672 @@
+[
+  {
+    "key": "SNK-001::Clear",
+    "familySKU": "SNK-001",
+    "productName": "Reef Explorer Snorkel Mask",
+    "category": "Snorkel & Dive",
+    "subcategory": "Masks",
+    "color": "Clear",
+    "filename": "SNK-001-clear.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-001::Black",
+    "familySKU": "SNK-001",
+    "productName": "Reef Explorer Snorkel Mask",
+    "category": "Snorkel & Dive",
+    "subcategory": "Masks",
+    "color": "Black",
+    "filename": "SNK-001-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-003::Aqua",
+    "familySKU": "SNK-003",
+    "productName": "Junior Snorkel Set (Kids)",
+    "category": "Snorkel & Dive",
+    "subcategory": "Sets",
+    "color": "Aqua",
+    "filename": "SNK-003-aqua.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-003::Pink",
+    "familySKU": "SNK-003",
+    "productName": "Junior Snorkel Set (Kids)",
+    "category": "Snorkel & Dive",
+    "subcategory": "Sets",
+    "color": "Pink",
+    "filename": "SNK-003-pink.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FIN-001::Black",
+    "familySKU": "FIN-001",
+    "productName": "Open-Heel Dive Fins",
+    "category": "Snorkel & Dive",
+    "subcategory": "Fins",
+    "color": "Black",
+    "filename": "FIN-001-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FIN-003::Aqua",
+    "familySKU": "FIN-003",
+    "productName": "Kids Swim Fins",
+    "category": "Snorkel & Dive",
+    "subcategory": "Fins",
+    "color": "Aqua",
+    "filename": "FIN-003-aqua.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-003::Sunset Print",
+    "familySKU": "BCH-003",
+    "productName": "Beach Towel Tropical Print",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Sunset Print",
+    "filename": "BCH-003-sunset-print.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-003::Reef Print",
+    "familySKU": "BCH-003",
+    "productName": "Beach Towel Tropical Print",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Reef Print",
+    "filename": "BCH-003-reef-print.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-003::Palm Print",
+    "familySKU": "BCH-003",
+    "productName": "Beach Towel Tropical Print",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Palm Print",
+    "filename": "BCH-003-palm-print.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-003::Blue",
+    "familySKU": "SUR-003",
+    "productName": "Beginner Foam Surfboard",
+    "category": "Surfing",
+    "subcategory": "Surfboards",
+    "color": "Blue",
+    "filename": "SUR-003-blue.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-001::Teal",
+    "familySKU": "APP-001",
+    "productName": "Tide & Tempo Logo Tee",
+    "category": "Apparel",
+    "subcategory": "Shirts",
+    "color": "Teal",
+    "filename": "APP-001-teal.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-002::Clear",
+    "familySKU": "SNK-002",
+    "productName": "Pro Anti-Fog Snorkel Mask",
+    "category": "Snorkel & Dive",
+    "subcategory": "Masks",
+    "color": "Clear",
+    "filename": "SNK-002-clear.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-002::Black",
+    "familySKU": "SNK-002",
+    "productName": "Pro Anti-Fog Snorkel Mask",
+    "category": "Snorkel & Dive",
+    "subcategory": "Masks",
+    "color": "Black",
+    "filename": "SNK-002-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-004::Black",
+    "familySKU": "SNK-004",
+    "productName": "Adult Snorkel Set",
+    "category": "Snorkel & Dive",
+    "subcategory": "Sets",
+    "color": "Black",
+    "filename": "SNK-004-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FIN-002::Black",
+    "familySKU": "FIN-002",
+    "productName": "Travel Snorkel Fins",
+    "category": "Snorkel & Dive",
+    "subcategory": "Fins",
+    "color": "Black",
+    "filename": "FIN-002-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "WET-001::Black",
+    "familySKU": "WET-001",
+    "productName": "3mm Shorty Wetsuit",
+    "category": "Snorkel & Dive",
+    "subcategory": "Wetsuits",
+    "color": "Black",
+    "filename": "WET-001-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "WET-002::Navy",
+    "familySKU": "WET-002",
+    "productName": "Rashguard Long Sleeve",
+    "category": "Apparel",
+    "subcategory": "Rashguards",
+    "color": "Navy",
+    "filename": "WET-002-navy.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "WET-002::Coral",
+    "familySKU": "WET-002",
+    "productName": "Rashguard Long Sleeve",
+    "category": "Apparel",
+    "subcategory": "Rashguards",
+    "color": "Coral",
+    "filename": "WET-002-coral.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-002::Sand",
+    "familySKU": "APP-002",
+    "productName": "Apo Island Souvenir Tee",
+    "category": "Apparel",
+    "subcategory": "Shirts",
+    "color": "Sand",
+    "filename": "APP-002-sand.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-004::Blue",
+    "familySKU": "BCH-004",
+    "productName": "Microfiber Quick-Dry Towel",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Blue",
+    "filename": "BCH-004-blue.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-004::Coral",
+    "familySKU": "BCH-004",
+    "productName": "Microfiber Quick-Dry Towel",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Coral",
+    "filename": "BCH-004-coral.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-004::Black",
+    "familySKU": "BCH-004",
+    "productName": "Microfiber Quick-Dry Towel",
+    "category": "Beach Essentials",
+    "subcategory": "Towels",
+    "color": "Black",
+    "filename": "BCH-004-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-012::Blue",
+    "familySKU": "BCH-012",
+    "productName": "Cooler Bag Insulated 24L",
+    "category": "Beach Essentials",
+    "subcategory": "Coolers",
+    "color": "Blue",
+    "filename": "BCH-012-blue.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-003::Navy",
+    "familySKU": "APP-003",
+    "productName": "Boardshorts \u2014 Mens",
+    "category": "Apparel",
+    "subcategory": "Bottoms",
+    "color": "Navy",
+    "filename": "APP-003-navy.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-004::Coral",
+    "familySKU": "APP-004",
+    "productName": "Bikini Set \u2014 Womens",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Coral",
+    "filename": "APP-004-coral.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-004::Aqua",
+    "familySKU": "APP-004",
+    "productName": "Bikini Set \u2014 Womens",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Aqua",
+    "filename": "APP-004-aqua.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-004::Black",
+    "familySKU": "APP-004",
+    "productName": "Bikini Set \u2014 Womens",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Black",
+    "filename": "APP-004-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-004::Tropical Print",
+    "familySKU": "APP-004",
+    "productName": "Bikini Set \u2014 Womens",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Tropical Print",
+    "filename": "APP-004-tropical-print.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-005::Black",
+    "familySKU": "APP-005",
+    "productName": "One-Piece Swimsuit",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Black",
+    "filename": "APP-005-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-005::Navy",
+    "familySKU": "APP-005",
+    "productName": "One-Piece Swimsuit",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Navy",
+    "filename": "APP-005-navy.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-005::Coral",
+    "familySKU": "APP-005",
+    "productName": "One-Piece Swimsuit",
+    "category": "Apparel",
+    "subcategory": "Swimwear",
+    "color": "Coral",
+    "filename": "APP-005-coral.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-007::Tropical",
+    "familySKU": "APP-007",
+    "productName": "Flip Flops Tropical",
+    "category": "Apparel",
+    "subcategory": "Footwear",
+    "color": "Tropical",
+    "filename": "APP-007-tropical.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-004::Black",
+    "familySKU": "SUR-004",
+    "productName": "Surf Leash 8ft",
+    "category": "Surfing",
+    "subcategory": "Accessories",
+    "color": "Black",
+    "filename": "SUR-004-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-006::Tropical",
+    "familySKU": "SUR-006",
+    "productName": "Skim Board Pro",
+    "category": "Surfing",
+    "subcategory": "Skimboards",
+    "color": "Tropical",
+    "filename": "SUR-006-tropical.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "KIT-002::Black",
+    "familySKU": "KIT-002",
+    "productName": "Kitesurf Harness",
+    "category": "Surfing",
+    "subcategory": "Kitesurf",
+    "color": "Black",
+    "filename": "KIT-002-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-006::Natural",
+    "familySKU": "APP-006",
+    "productName": "UV Hat Wide Brim",
+    "category": "Apparel",
+    "subcategory": "Hats",
+    "color": "Natural",
+    "filename": "APP-006-natural.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "APP-006::Black",
+    "familySKU": "APP-006",
+    "productName": "UV Hat Wide Brim",
+    "category": "Apparel",
+    "subcategory": "Hats",
+    "color": "Black",
+    "filename": "APP-006-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "KIT-001::Red",
+    "familySKU": "KIT-001",
+    "productName": "Beginner Kitesurf Kit",
+    "category": "Surfing",
+    "subcategory": "Kitesurf",
+    "color": "Red",
+    "filename": "KIT-001-red.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "KIT-001::Blue",
+    "familySKU": "KIT-001",
+    "productName": "Beginner Kitesurf Kit",
+    "category": "Surfing",
+    "subcategory": "Kitesurf",
+    "color": "Blue",
+    "filename": "KIT-001-blue.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "KIT-001::Yellow",
+    "familySKU": "KIT-001",
+    "productName": "Beginner Kitesurf Kit",
+    "category": "Surfing",
+    "subcategory": "Kitesurf",
+    "color": "Yellow",
+    "filename": "KIT-001-yellow.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Aviator/Black",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Aviator/Black",
+    "filename": "BCH-009-aviator-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Aviator/Gold",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Aviator/Gold",
+    "filename": "BCH-009-aviator-gold.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Wayfarer/Black",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Wayfarer/Black",
+    "filename": "BCH-009-wayfarer-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Wayfarer/Tortoise",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Wayfarer/Tortoise",
+    "filename": "BCH-009-wayfarer-tortoise.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Sport/Black",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Sport/Black",
+    "filename": "BCH-009-sport-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-009::Cat-Eye/Tortoise",
+    "familySKU": "BCH-009",
+    "productName": "Polarized Sunglasses",
+    "category": "Beach Essentials",
+    "subcategory": "Eyewear",
+    "color": "Cat-Eye/Tortoise",
+    "filename": "BCH-009-cat-eye-tortoise.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-011::Black",
+    "familySKU": "BCH-011",
+    "productName": "Reef Walker Water Shoes",
+    "category": "Beach Essentials",
+    "subcategory": "Footwear",
+    "color": "Black",
+    "filename": "BCH-011-black.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-011::Aqua",
+    "familySKU": "BCH-011",
+    "productName": "Reef Walker Water Shoes",
+    "category": "Beach Essentials",
+    "subcategory": "Footwear",
+    "color": "Aqua",
+    "filename": "BCH-011-aqua.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SNK-005::Default",
+    "familySKU": "SNK-005",
+    "productName": "Dry-Top Snorkel",
+    "category": "Snorkel & Dive",
+    "subcategory": "Snorkels",
+    "color": null,
+    "filename": "SNK-005.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-002::Default",
+    "familySKU": "BCH-002",
+    "productName": "Beach Ball Inflatable",
+    "category": "Beach Essentials",
+    "subcategory": "Kids",
+    "color": null,
+    "filename": "BCH-002.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-001::Default",
+    "familySKU": "BCH-001",
+    "productName": "Sand Shovel & Bucket Set",
+    "category": "Beach Essentials",
+    "subcategory": "Kids",
+    "color": null,
+    "filename": "BCH-001.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-005::Default",
+    "familySKU": "BCH-005",
+    "productName": "Beach Umbrella 7ft",
+    "category": "Beach Essentials",
+    "subcategory": "Shade",
+    "color": null,
+    "filename": "BCH-005.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-007::Default",
+    "familySKU": "BCH-007",
+    "productName": "Reef-Safe Sunscreen SPF50",
+    "category": "Beach Essentials",
+    "subcategory": "Sun Care",
+    "color": null,
+    "filename": "BCH-007.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-001::Default",
+    "familySKU": "FSH-001",
+    "productName": "Saltwater Spinning Rod 7ft",
+    "category": "Fishing",
+    "subcategory": "Rods",
+    "color": null,
+    "filename": "FSH-001.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-003::Default",
+    "familySKU": "FSH-003",
+    "productName": "Spinning Reel 4000",
+    "category": "Fishing",
+    "subcategory": "Reels",
+    "color": null,
+    "filename": "FSH-003.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-005::Default",
+    "familySKU": "FSH-005",
+    "productName": "Live Bait \u2014 Shrimp (lb)",
+    "category": "Fishing",
+    "subcategory": "Bait",
+    "color": null,
+    "filename": "FSH-005.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-006::Default",
+    "familySKU": "FSH-006",
+    "productName": "Live Bait \u2014 Squid (lb)",
+    "category": "Fishing",
+    "subcategory": "Bait",
+    "color": null,
+    "filename": "FSH-006.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-006::Default",
+    "familySKU": "BCH-006",
+    "productName": "Pop-Up Beach Tent",
+    "category": "Beach Essentials",
+    "subcategory": "Shade",
+    "color": null,
+    "filename": "BCH-006.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-008::Default",
+    "familySKU": "BCH-008",
+    "productName": "After-Sun Aloe Gel",
+    "category": "Beach Essentials",
+    "subcategory": "Sun Care",
+    "color": null,
+    "filename": "BCH-008.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-007::Default",
+    "familySKU": "FSH-007",
+    "productName": "Lure Pack Tropical (12pc)",
+    "category": "Fishing",
+    "subcategory": "Tackle",
+    "color": null,
+    "filename": "FSH-007.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-008::Default",
+    "familySKU": "FSH-008",
+    "productName": "Cast Net 8ft",
+    "category": "Fishing",
+    "subcategory": "Nets",
+    "color": null,
+    "filename": "FSH-008.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-001::Default",
+    "familySKU": "SUR-001",
+    "productName": "7'2 Funboard Surfboard",
+    "category": "Surfing",
+    "subcategory": "Surfboards",
+    "color": null,
+    "filename": "SUR-001.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-002::Default",
+    "familySKU": "SUR-002",
+    "productName": "9'0 Longboard Surfboard",
+    "category": "Surfing",
+    "subcategory": "Surfboards",
+    "color": null,
+    "filename": "SUR-002.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-002::Default",
+    "familySKU": "FSH-002",
+    "productName": "Telescopic Travel Rod",
+    "category": "Fishing",
+    "subcategory": "Rods",
+    "color": null,
+    "filename": "FSH-002.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "FSH-004::Default",
+    "familySKU": "FSH-004",
+    "productName": "Tackle Box Deluxe",
+    "category": "Fishing",
+    "subcategory": "Tackle",
+    "color": null,
+    "filename": "FSH-004.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "SUR-005::Default",
+    "familySKU": "SUR-005",
+    "productName": "Surf Wax Tropical",
+    "category": "Surfing",
+    "subcategory": "Accessories",
+    "color": null,
+    "filename": "SUR-005.jpg",
+    "status": "needed"
+  },
+  {
+    "key": "BCH-010::Default",
+    "familySKU": "BCH-010",
+    "productName": "Waterproof Phone Pouch",
+    "category": "Beach Essentials",
+    "subcategory": "Accessories",
+    "color": null,
+    "filename": "BCH-010.jpg",
+    "status": "needed"
+  }
+]

@@ -43,7 +43,13 @@ const cards = [
 export default function ApoIsland() {
   return (
     <main>
-      <section className="about-hero">
+      <section
+        className="about-hero"
+        style={{
+          backgroundImage:
+            "linear-gradient(165deg, rgba(15,58,84,0.78) 0%, rgba(18,88,122,0.66) 60%, rgba(26,127,168,0.7) 100%), url(/lifestyle/SUR-003.jpg)",
+        }}
+      >
         <div className="container">
           <div style={{ fontSize: "3.5rem" }}>🏝️</div>
           <h1>Welcome to Apo Island</h1>

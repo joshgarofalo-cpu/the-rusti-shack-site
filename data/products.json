@@ -8,7 +8,146 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "APP-005-black.jpg"
+      },
+      {
+        "color": "Navy",
+        "image": "APP-005-navy.jpg"
+      },
+      {
+        "color": "Coral",
+        "image": "APP-005-coral.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-005-S-BLA",
+        "size": "S",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.17,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-S-NAV",
+        "size": "S",
+        "color": "Navy",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.2,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-S-COR",
+        "size": "S",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.21,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-M-BLA",
+        "size": "M",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 23.66,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-M-NAV",
+        "size": "M",
+        "color": "Navy",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.37,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-M-COR",
+        "size": "M",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.17,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-L-BLA",
+        "size": "L",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 23.89,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-L-NAV",
+        "size": "L",
+        "color": "Navy",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.18,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-L-COR",
+        "size": "L",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.38,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-XL-BLA",
+        "size": "XL",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.1,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-XL-NAV",
+        "size": "XL",
+        "color": "Navy",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 23.7,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-005-XL-COR",
+        "size": "XL",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 58.0,
+        "unitCost": 24.1,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-005.jpg",
+    "lifestyle": "/lifestyle/APP-005.jpg"
   },
   {
     "sku": "APP-004",
@@ -19,7 +158,230 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Coral",
+        "image": "APP-004-coral.jpg"
+      },
+      {
+        "color": "Aqua",
+        "image": "APP-004-aqua.jpg"
+      },
+      {
+        "color": "Black",
+        "image": "APP-004-black.jpg"
+      },
+      {
+        "color": "Tropical Print",
+        "image": "APP-004-tropical-print.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-004-XS-COR",
+        "size": "XS",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.01,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XS-AQU",
+        "size": "XS",
+        "color": "Aqua",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.75,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XS-BLA",
+        "size": "XS",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.15,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XS-TRO",
+        "size": "XS",
+        "color": "Tropical Print",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.79,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-S-COR",
+        "size": "S",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.71,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-S-AQU",
+        "size": "S",
+        "color": "Aqua",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.87,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-S-BLA",
+        "size": "S",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.8,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-S-TRO",
+        "size": "S",
+        "color": "Tropical Print",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.68,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-M-COR",
+        "size": "M",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.38,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-M-AQU",
+        "size": "M",
+        "color": "Aqua",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.11,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-M-BLA",
+        "size": "M",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.23,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-M-TRO",
+        "size": "M",
+        "color": "Tropical Print",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.4,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-L-COR",
+        "size": "L",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.17,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-L-AQU",
+        "size": "L",
+        "color": "Aqua",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.24,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-L-BLA",
+        "size": "L",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.11,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-L-TRO",
+        "size": "L",
+        "color": "Tropical Print",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.36,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XL-COR",
+        "size": "XL",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.8,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XL-AQU",
+        "size": "XL",
+        "color": "Aqua",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.35,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XL-BLA",
+        "size": "XL",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 22.3,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-004-XL-TRO",
+        "size": "XL",
+        "color": "Tropical Print",
+        "gender": "W",
+        "unitPrice": 54.0,
+        "unitCost": 21.84,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-004.jpg",
+    "lifestyle": "/lifestyle/APP-004.jpg"
   },
   {
     "sku": "APP-003",
@@ -30,7 +392,88 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Navy",
+        "image": "APP-003-navy.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-003-28",
+        "size": "28",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 17.62,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-30",
+        "size": "30",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 18.17,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-32",
+        "size": "32",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 17.65,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-34",
+        "size": "34",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 18.01,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-36",
+        "size": "36",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 17.7,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-38",
+        "size": "38",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 18.06,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-003-40",
+        "size": "40",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 44.99,
+        "unitCost": 17.94,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-003.jpg",
+    "lifestyle": "/lifestyle/APP-003.jpg"
   },
   {
     "sku": "WET-002",
@@ -41,7 +484,102 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Navy",
+        "image": "WET-002-navy.jpg"
+      },
+      {
+        "color": "Coral",
+        "image": "WET-002-coral.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "WET-002-S-M",
+        "size": "S",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 32.99,
+        "unitCost": 13.81,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-S-W",
+        "size": "S",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 32.99,
+        "unitCost": 13.7,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-M-M",
+        "size": "M",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 32.99,
+        "unitCost": 14.37,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-M-W",
+        "size": "M",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 32.99,
+        "unitCost": 13.79,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-L-M",
+        "size": "L",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 32.99,
+        "unitCost": 14.24,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-L-W",
+        "size": "L",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 32.99,
+        "unitCost": 13.75,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-XL-M",
+        "size": "XL",
+        "color": "Navy",
+        "gender": "M",
+        "unitPrice": 32.99,
+        "unitCost": 14.38,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "WET-002-XL-W",
+        "size": "XL",
+        "color": "Coral",
+        "gender": "W",
+        "unitPrice": 32.99,
+        "unitCost": 14.07,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/WET-002.jpg",
+    "lifestyle": "/lifestyle/WET-002.jpg"
   },
   {
     "sku": "APP-006",
@@ -52,7 +590,62 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Natural",
+        "image": "APP-006-natural.jpg"
+      },
+      {
+        "color": "Black",
+        "image": "APP-006-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-006-SM-NAT",
+        "size": "S/M",
+        "color": "Natural",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.28,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-006-SM-BLK",
+        "size": "S/M",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.33,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-006-LXL-NAT",
+        "size": "L/XL",
+        "color": "Natural",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.06,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-006-LXL-BLK",
+        "size": "L/XL",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 10.97,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-006.jpg",
+    "lifestyle": "/lifestyle/APP-006.jpg"
   },
   {
     "sku": "APP-002",
@@ -63,7 +656,118 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Sand",
+        "image": "APP-002-sand.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-002-XS-M",
+        "size": "XS",
+        "color": "Sand",
+        "gender": "M",
+        "unitPrice": 26.99,
+        "unitCost": 9.2,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-XS-W",
+        "size": "XS",
+        "color": "Sand",
+        "gender": "W",
+        "unitPrice": 26.99,
+        "unitCost": 9.15,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-S-M",
+        "size": "S",
+        "color": "Sand",
+        "gender": "M",
+        "unitPrice": 26.99,
+        "unitCost": 9.33,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-S-W",
+        "size": "S",
+        "color": "Sand",
+        "gender": "W",
+        "unitPrice": 26.99,
+        "unitCost": 9.11,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-M-M",
+        "size": "M",
+        "color": "Sand",
+        "gender": "M",
+        "unitPrice": 26.99,
+        "unitCost": 8.79,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-M-W",
+        "size": "M",
+        "color": "Sand",
+        "gender": "W",
+        "unitPrice": 26.99,
+        "unitCost": 9.33,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-L-M",
+        "size": "L",
+        "color": "Sand",
+        "gender": "M",
+        "unitPrice": 26.99,
+        "unitCost": 9.03,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-L-W",
+        "size": "L",
+        "color": "Sand",
+        "gender": "W",
+        "unitPrice": 26.99,
+        "unitCost": 8.86,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-XL-M",
+        "size": "XL",
+        "color": "Sand",
+        "gender": "M",
+        "unitPrice": 26.99,
+        "unitCost": 9.38,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-002-XL-W",
+        "size": "XL",
+        "color": "Sand",
+        "gender": "W",
+        "unitPrice": 26.99,
+        "unitCost": 9.07,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-002.jpg",
+    "lifestyle": "/lifestyle/APP-002.jpg"
   },
   {
     "sku": "APP-001",
@@ -74,7 +778,118 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Teal",
+        "image": "APP-001-teal.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-001-XS-M",
+        "size": "XS",
+        "color": "Teal",
+        "gender": "M",
+        "unitPrice": 24.99,
+        "unitCost": 7.87,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-XS-W",
+        "size": "XS",
+        "color": "Teal",
+        "gender": "W",
+        "unitPrice": 24.99,
+        "unitCost": 8.28,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-S-M",
+        "size": "S",
+        "color": "Teal",
+        "gender": "M",
+        "unitPrice": 24.99,
+        "unitCost": 7.76,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-S-W",
+        "size": "S",
+        "color": "Teal",
+        "gender": "W",
+        "unitPrice": 24.99,
+        "unitCost": 7.89,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-M-M",
+        "size": "M",
+        "color": "Teal",
+        "gender": "M",
+        "unitPrice": 24.99,
+        "unitCost": 7.93,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-M-W",
+        "size": "M",
+        "color": "Teal",
+        "gender": "W",
+        "unitPrice": 24.99,
+        "unitCost": 7.87,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-L-M",
+        "size": "L",
+        "color": "Teal",
+        "gender": "M",
+        "unitPrice": 24.99,
+        "unitCost": 7.99,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-L-W",
+        "size": "L",
+        "color": "Teal",
+        "gender": "W",
+        "unitPrice": 24.99,
+        "unitCost": 7.98,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-XL-M",
+        "size": "XL",
+        "color": "Teal",
+        "gender": "M",
+        "unitPrice": 24.99,
+        "unitCost": 8.11,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-001-XL-W",
+        "size": "XL",
+        "color": "Teal",
+        "gender": "W",
+        "unitPrice": 24.99,
+        "unitCost": 7.89,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-001.jpg",
+    "lifestyle": "/lifestyle/APP-001.jpg"
   },
   {
     "sku": "APP-007",
@@ -85,7 +900,68 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Island Imports",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Tropical",
+        "image": "APP-007-tropical.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "APP-007-W6-7",
+        "size": "W6-7",
+        "color": "Tropical",
+        "gender": "W",
+        "unitPrice": 14.99,
+        "unitCost": 4.81,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-007-W8-9",
+        "size": "W8-9",
+        "color": "Tropical",
+        "gender": "W",
+        "unitPrice": 14.99,
+        "unitCost": 4.89,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-007-M9-10",
+        "size": "M9-10",
+        "color": "Tropical",
+        "gender": "M",
+        "unitPrice": 14.99,
+        "unitCost": 4.92,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-007-M11-12",
+        "size": "M11-12",
+        "color": "Tropical",
+        "gender": "M",
+        "unitPrice": 14.99,
+        "unitCost": 4.62,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "APP-007-K2-4",
+        "size": "K2-4",
+        "color": "Tropical",
+        "gender": "U",
+        "unitPrice": 14.99,
+        "unitCost": 5.2,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/APP-007.jpg",
+    "lifestyle": "/lifestyle/APP-007.jpg"
   },
   {
     "sku": "BCH-006",
@@ -96,7 +972,17 @@
     "rentalRate": 10.4,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-006.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-006.jpg",
+    "lifestyle": "/lifestyle/BCH-006.jpg"
   },
   {
     "sku": "BCH-012",
@@ -107,7 +993,48 @@
     "rentalRate": 4.85,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Blue",
+        "image": "BCH-012-blue.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "BCH-012-16L",
+        "size": "16 L",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 44.0,
+        "unitCost": 18.28,
+        "rentalRate": 4.68,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-012-24L",
+        "size": "24 L",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 24.29,
+        "rentalRate": 4.77,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-012-40L",
+        "size": "40 L",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 79.0,
+        "unitCost": 35.97,
+        "rentalRate": 5.09,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/BCH-012.jpg",
+    "lifestyle": "/lifestyle/BCH-012.jpg"
   },
   {
     "sku": "BCH-005",
@@ -118,7 +1045,17 @@
     "rentalRate": 7.74,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-005.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-005.jpg",
+    "lifestyle": "/lifestyle/BCH-005.jpg"
   },
   {
     "sku": "BCH-009",
@@ -129,7 +1066,98 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Island Imports",
-    "yearIntroduced": 2025
+    "yearIntroduced": 2025,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Aviator/Black",
+        "image": "BCH-009-aviator-black.jpg"
+      },
+      {
+        "color": "Aviator/Gold",
+        "image": "BCH-009-aviator-gold.jpg"
+      },
+      {
+        "color": "Wayfarer/Black",
+        "image": "BCH-009-wayfarer-black.jpg"
+      },
+      {
+        "color": "Wayfarer/Tortoise",
+        "image": "BCH-009-wayfarer-tortoise.jpg"
+      },
+      {
+        "color": "Sport/Black",
+        "image": "BCH-009-sport-black.jpg"
+      },
+      {
+        "color": "Cat-Eye/Tortoise",
+        "image": "BCH-009-cat-eye-tortoise.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "BCH-009-AVI-BLK",
+        "size": "One Size",
+        "color": "Aviator/Black",
+        "gender": "M",
+        "unitPrice": 39.99,
+        "unitCost": 14.39,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "BCH-009-AVI-GLD",
+        "size": "One Size",
+        "color": "Aviator/Gold",
+        "gender": "U",
+        "unitPrice": 39.99,
+        "unitCost": 13.74,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "BCH-009-WAY-BLK",
+        "size": "One Size",
+        "color": "Wayfarer/Black",
+        "gender": "U",
+        "unitPrice": 39.99,
+        "unitCost": 14.21,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "BCH-009-WAY-TOR",
+        "size": "One Size",
+        "color": "Wayfarer/Tortoise",
+        "gender": "U",
+        "unitPrice": 39.99,
+        "unitCost": 14.28,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "BCH-009-SPT-BLK",
+        "size": "One Size",
+        "color": "Sport/Black",
+        "gender": "M",
+        "unitPrice": 39.99,
+        "unitCost": 14.31,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "BCH-009-CAT-TOR",
+        "size": "One Size",
+        "color": "Cat-Eye/Tortoise",
+        "gender": "W",
+        "unitPrice": 39.99,
+        "unitCost": 14.09,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/BCH-009.jpg",
+    "lifestyle": "/lifestyle/BCH-009.jpg"
   },
   {
     "sku": "BCH-011",
@@ -140,7 +1168,72 @@
     "rentalRate": 3.07,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2025
+    "yearIntroduced": 2025,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "BCH-011-black.jpg"
+      },
+      {
+        "color": "Aqua",
+        "image": "BCH-011-aqua.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "BCH-011-W6-7",
+        "size": "W6-7",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 38.0,
+        "unitCost": 15.82,
+        "rentalRate": 2.74,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-011-W8-9",
+        "size": "W8-9",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 38.0,
+        "unitCost": 15.72,
+        "rentalRate": 2.62,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-011-M9-10",
+        "size": "M9-10",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 38.0,
+        "unitCost": 15.8,
+        "rentalRate": 2.5,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-011-M11-12",
+        "size": "M11-12",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 38.0,
+        "unitCost": 15.89,
+        "rentalRate": 2.74,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-011-K2-4",
+        "size": "Kids 2-4",
+        "color": "Aqua",
+        "gender": "U",
+        "unitPrice": 38.0,
+        "unitCost": 15.63,
+        "rentalRate": 2.72,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/BCH-011.jpg",
+    "lifestyle": "/lifestyle/BCH-011.jpg"
   },
   {
     "sku": "BCH-004",
@@ -151,7 +1244,86 @@
     "rentalRate": 3.29,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Blue",
+        "image": "BCH-004-blue.jpg"
+      },
+      {
+        "color": "Coral",
+        "image": "BCH-004-coral.jpg"
+      },
+      {
+        "color": "Black",
+        "image": "BCH-004-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "BCH-004-M-BLU",
+        "size": "M (60x120cm)",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.06,
+        "rentalRate": 3.35,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-004-L-BLU",
+        "size": "L (80x160cm)",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.21,
+        "rentalRate": 3.43,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-004-M-CRL",
+        "size": "M (60x120cm)",
+        "color": "Coral",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.05,
+        "rentalRate": 2.7,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-004-L-CRL",
+        "size": "L (80x160cm)",
+        "color": "Coral",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 10.93,
+        "rentalRate": 3.38,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-004-M-BLK",
+        "size": "M (60x120cm)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 10.9,
+        "rentalRate": 3.39,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-004-L-BLK",
+        "size": "L (80x160cm)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 28.0,
+        "unitCost": 11.04,
+        "rentalRate": 2.85,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/BCH-004.jpg",
+    "lifestyle": "/lifestyle/BCH-004.jpg"
   },
   {
     "sku": "BCH-003",
@@ -162,7 +1334,56 @@
     "rentalRate": 2.71,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Sunset Print",
+        "image": "BCH-003-sunset-print.jpg"
+      },
+      {
+        "color": "Reef Print",
+        "image": "BCH-003-reef-print.jpg"
+      },
+      {
+        "color": "Palm Print",
+        "image": "BCH-003-palm-print.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "BCH-003-SUNSET",
+        "size": "Standard",
+        "color": "Sunset Print",
+        "gender": "U",
+        "unitPrice": 24.99,
+        "unitCost": 8.75,
+        "rentalRate": 3.26,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-003-REEF",
+        "size": "Standard",
+        "color": "Reef Print",
+        "gender": "U",
+        "unitPrice": 24.99,
+        "unitCost": 9.01,
+        "rentalRate": 2.95,
+        "availability": "Both"
+      },
+      {
+        "sku": "BCH-003-PALM",
+        "size": "Standard",
+        "color": "Palm Print",
+        "gender": "U",
+        "unitPrice": 24.99,
+        "unitCost": 8.69,
+        "rentalRate": 3.41,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/BCH-003.jpg",
+    "lifestyle": "/lifestyle/BCH-003.jpg"
   },
   {
     "sku": "BCH-007",
@@ -173,7 +1394,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "EcoSun Manila",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-007.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-007.jpg",
+    "lifestyle": "/lifestyle/BCH-007.jpg"
   },
   {
     "sku": "BCH-001",
@@ -184,7 +1415,17 @@
     "rentalRate": 2.05,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-001.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-001.jpg",
+    "lifestyle": "/lifestyle/BCH-001.jpg"
   },
   {
     "sku": "BCH-008",
@@ -195,7 +1436,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "EcoSun Manila",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-008.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-008.jpg",
+    "lifestyle": "/lifestyle/BCH-008.jpg"
   },
   {
     "sku": "BCH-010",
@@ -206,7 +1457,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Island Imports",
-    "yearIntroduced": 2025
+    "yearIntroduced": 2025,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-010.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-010.jpg",
+    "lifestyle": "/lifestyle/BCH-010.jpg"
   },
   {
     "sku": "BCH-002",
@@ -217,7 +1478,17 @@
     "rentalRate": 1.7,
     "availability": "Both",
     "supplier": "Island Imports",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "BCH-002.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/BCH-002.jpg",
+    "lifestyle": "/lifestyle/BCH-002.jpg"
   },
   {
     "sku": "FSH-001",
@@ -228,7 +1499,17 @@
     "rentalRate": 7.65,
     "availability": "Both",
     "supplier": "Pacific Tackle",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-001.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-001.jpg",
+    "lifestyle": "/lifestyle/FSH-001.jpg"
   },
   {
     "sku": "FSH-003",
@@ -239,7 +1520,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Pacific Tackle",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-003.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-003.jpg",
+    "lifestyle": "/lifestyle/FSH-003.jpg"
   },
   {
     "sku": "FSH-002",
@@ -250,7 +1541,17 @@
     "rentalRate": 6.08,
     "availability": "Both",
     "supplier": "Pacific Tackle",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-002.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-002.jpg",
+    "lifestyle": "/lifestyle/FSH-002.jpg"
   },
   {
     "sku": "FSH-004",
@@ -261,7 +1562,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Pacific Tackle",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-004.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-004.jpg",
+    "lifestyle": "/lifestyle/FSH-004.jpg"
   },
   {
     "sku": "FSH-008",
@@ -272,7 +1583,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Local Fishermen Co-op",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-008.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-008.jpg",
+    "lifestyle": "/lifestyle/FSH-008.jpg"
   },
   {
     "sku": "FSH-007",
@@ -283,7 +1604,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Pacific Tackle",
-    "yearIntroduced": 2023
+    "yearIntroduced": 2023,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-007.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-007.jpg",
+    "lifestyle": "/lifestyle/FSH-007.jpg"
   },
   {
     "sku": "FSH-006",
@@ -294,7 +1625,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Local Fishermen Co-op",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-006.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-006.jpg",
+    "lifestyle": "/lifestyle/FSH-006.jpg"
   },
   {
     "sku": "FSH-005",
@@ -305,7 +1646,17 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Local Fishermen Co-op",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "FSH-005.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/FSH-005.jpg",
+    "lifestyle": "/lifestyle/FSH-005.jpg"
   },
   {
     "sku": "WET-001",
@@ -316,7 +1667,98 @@
     "rentalRate": 10.31,
     "availability": "Both",
     "supplier": "DeepBlue Cebu",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "WET-001-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "WET-001-S-M",
+        "size": "S",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 109.0,
+        "unitCost": 44.67,
+        "rentalRate": 9.67,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-S-W",
+        "size": "S",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 109.0,
+        "unitCost": 45.22,
+        "rentalRate": 10.28,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-M-M",
+        "size": "M",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 109.0,
+        "unitCost": 44.71,
+        "rentalRate": 10.21,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-M-W",
+        "size": "M",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 109.0,
+        "unitCost": 45.25,
+        "rentalRate": 9.8,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-L-M",
+        "size": "L",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 109.0,
+        "unitCost": 44.7,
+        "rentalRate": 9.68,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-L-W",
+        "size": "L",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 109.0,
+        "unitCost": 44.63,
+        "rentalRate": 10.1,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-XL-M",
+        "size": "XL",
+        "color": "Black",
+        "gender": "M",
+        "unitPrice": 109.0,
+        "unitCost": 44.97,
+        "rentalRate": 10.49,
+        "availability": "Both"
+      },
+      {
+        "sku": "WET-001-XL-W",
+        "size": "XL",
+        "color": "Black",
+        "gender": "W",
+        "unitPrice": 109.0,
+        "unitCost": 44.98,
+        "rentalRate": 10.32,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/WET-001.jpg",
+    "lifestyle": "/lifestyle/WET-001.jpg"
   },
   {
     "sku": "FIN-001",
@@ -327,7 +1769,58 @@
     "rentalRate": 6.44,
     "availability": "Both",
     "supplier": "DeepBlue Cebu",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "FIN-001-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "FIN-001-S",
+        "size": "S (W6-7)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 79.0,
+        "unitCost": 32.08,
+        "rentalRate": 6.12,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-001-M",
+        "size": "M (W8-9 / M7-8)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 79.0,
+        "unitCost": 31.79,
+        "rentalRate": 6.22,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-001-L",
+        "size": "L (M9-10)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 79.0,
+        "unitCost": 31.95,
+        "rentalRate": 6.1,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-001-XL",
+        "size": "XL (M11-12)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 79.0,
+        "unitCost": 31.62,
+        "rentalRate": 6.42,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/FIN-001.jpg",
+    "lifestyle": "/lifestyle/FIN-001.jpg"
   },
   {
     "sku": "SNK-004",
@@ -338,7 +1831,48 @@
     "rentalRate": 7.01,
     "availability": "Both",
     "supplier": "Aqualine PH",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "SNK-004-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SNK-004-S",
+        "size": "S",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 64.99,
+        "unitCost": 27.61,
+        "rentalRate": 7.25,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-004-M",
+        "size": "M",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 64.99,
+        "unitCost": 27.63,
+        "rentalRate": 7.04,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-004-L",
+        "size": "L",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 64.99,
+        "unitCost": 27.81,
+        "rentalRate": 7.04,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SNK-004.jpg",
+    "lifestyle": "/lifestyle/SNK-004.jpg"
   },
   {
     "sku": "SNK-002",
@@ -349,7 +1883,82 @@
     "rentalRate": 5.51,
     "availability": "Both",
     "supplier": "Aqualine PH",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Clear",
+        "image": "SNK-002-clear.jpg"
+      },
+      {
+        "color": "Black",
+        "image": "SNK-002-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SNK-002-S-CLR",
+        "size": "S",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 23.74,
+        "rentalRate": 6.11,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-002-M-CLR",
+        "size": "M",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 23.78,
+        "rentalRate": 5.75,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-002-L-CLR",
+        "size": "L",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 24.13,
+        "rentalRate": 5.91,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-002-S-BLK",
+        "size": "S",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 24.28,
+        "rentalRate": 5.64,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-002-M-BLK",
+        "size": "M",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 23.79,
+        "rentalRate": 5.95,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-002-L-BLK",
+        "size": "L",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 58.0,
+        "unitCost": 23.65,
+        "rentalRate": 6.26,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SNK-002.jpg",
+    "lifestyle": "/lifestyle/SNK-002.jpg"
   },
   {
     "sku": "FIN-002",
@@ -360,7 +1969,58 @@
     "rentalRate": 5.38,
     "availability": "Both",
     "supplier": "DeepBlue Cebu",
-    "yearIntroduced": 2022
+    "yearIntroduced": 2022,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "FIN-002-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "FIN-002-S",
+        "size": "S (W6-7)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 49.99,
+        "unitCost": 21.76,
+        "rentalRate": 4.84,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-002-M",
+        "size": "M (W8-9 / M7-8)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 49.99,
+        "unitCost": 21.89,
+        "rentalRate": 5.1,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-002-L",
+        "size": "L (M9-10)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 49.99,
+        "unitCost": 21.67,
+        "rentalRate": 4.5,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-002-XL",
+        "size": "XL (M11-12)",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 49.99,
+        "unitCost": 21.7,
+        "rentalRate": 5.1,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/FIN-002.jpg",
+    "lifestyle": "/lifestyle/FIN-002.jpg"
   },
   {
     "sku": "SNK-001",
@@ -371,7 +2031,82 @@
     "rentalRate": 4.78,
     "availability": "Both",
     "supplier": "Aqualine PH",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Clear",
+        "image": "SNK-001-clear.jpg"
+      },
+      {
+        "color": "Black",
+        "image": "SNK-001-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SNK-001-S-CLR",
+        "size": "S",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.29,
+        "rentalRate": 5.36,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-001-M-CLR",
+        "size": "M",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.42,
+        "rentalRate": 4.96,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-001-L-CLR",
+        "size": "L",
+        "color": "Clear",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.49,
+        "rentalRate": 4.73,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-001-S-BLK",
+        "size": "S",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.31,
+        "rentalRate": 4.82,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-001-M-BLK",
+        "size": "M",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.71,
+        "rentalRate": 4.91,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-001-L-BLK",
+        "size": "L",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 42.99,
+        "unitCost": 18.62,
+        "rentalRate": 5.04,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SNK-001.jpg",
+    "lifestyle": "/lifestyle/SNK-001.jpg"
   },
   {
     "sku": "SNK-003",
@@ -382,7 +2117,62 @@
     "rentalRate": 4.35,
     "availability": "Both",
     "supplier": "Aqualine PH",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Aqua",
+        "image": "SNK-003-aqua.jpg"
+      },
+      {
+        "color": "Pink",
+        "image": "SNK-003-pink.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SNK-003-K4-7-AQUA",
+        "size": "Age 4-7",
+        "color": "Aqua",
+        "gender": "U",
+        "unitPrice": 34.99,
+        "unitCost": 16.29,
+        "rentalRate": 3.87,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-003-K4-7-PINK",
+        "size": "Age 4-7",
+        "color": "Pink",
+        "gender": "U",
+        "unitPrice": 34.99,
+        "unitCost": 16.28,
+        "rentalRate": 3.89,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-003-K8-12-AQUA",
+        "size": "Age 8-12",
+        "color": "Aqua",
+        "gender": "U",
+        "unitPrice": 34.99,
+        "unitCost": 15.84,
+        "rentalRate": 3.79,
+        "availability": "Both"
+      },
+      {
+        "sku": "SNK-003-K8-12-PINK",
+        "size": "Age 8-12",
+        "color": "Pink",
+        "gender": "U",
+        "unitPrice": 34.99,
+        "unitCost": 15.9,
+        "rentalRate": 3.81,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SNK-003.jpg",
+    "lifestyle": "/lifestyle/SNK-003.jpg"
   },
   {
     "sku": "FIN-003",
@@ -393,7 +2183,38 @@
     "rentalRate": 3.15,
     "availability": "Both",
     "supplier": "DeepBlue Cebu",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Aqua",
+        "image": "FIN-003-aqua.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "FIN-003-S",
+        "size": "Kids S",
+        "color": "Aqua",
+        "gender": "U",
+        "unitPrice": 29.99,
+        "unitCost": 13.67,
+        "rentalRate": 3.46,
+        "availability": "Both"
+      },
+      {
+        "sku": "FIN-003-M",
+        "size": "Kids M",
+        "color": "Aqua",
+        "gender": "U",
+        "unitPrice": 29.99,
+        "unitCost": 13.8,
+        "rentalRate": 2.64,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/FIN-003.jpg",
+    "lifestyle": "/lifestyle/FIN-003.jpg"
   },
   {
     "sku": "SNK-005",
@@ -404,7 +2225,17 @@
     "rentalRate": 3.02,
     "availability": "Both",
     "supplier": "Aqualine PH",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "SNK-005.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/SNK-005.jpg",
+    "lifestyle": "/lifestyle/SNK-005.jpg"
   },
   {
     "sku": "KIT-001",
@@ -415,7 +2246,56 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "WindRider Asia",
-    "yearIntroduced": 2025
+    "yearIntroduced": 2025,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Red",
+        "image": "KIT-001-red.jpg"
+      },
+      {
+        "color": "Blue",
+        "image": "KIT-001-blue.jpg"
+      },
+      {
+        "color": "Yellow",
+        "image": "KIT-001-yellow.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "KIT-001-7M",
+        "size": "7 m2",
+        "color": "Red",
+        "gender": "U",
+        "unitPrice": 1099.0,
+        "unitCost": 419.77,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "KIT-001-9M",
+        "size": "9 m2",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 1099.0,
+        "unitCost": 420.02,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "KIT-001-12M",
+        "size": "12 m2",
+        "color": "Yellow",
+        "gender": "U",
+        "unitPrice": 1099.0,
+        "unitCost": 419.83,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/KIT-001.jpg",
+    "lifestyle": "/lifestyle/KIT-001.jpg"
   },
   {
     "sku": "SUR-002",
@@ -426,7 +2306,17 @@
     "rentalRate": 29.91,
     "availability": "Both",
     "supplier": "Siargao Boards",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "SUR-002.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/SUR-002.jpg",
+    "lifestyle": "/lifestyle/SUR-002.jpg"
   },
   {
     "sku": "SUR-001",
@@ -437,7 +2327,17 @@
     "rentalRate": 25.42,
     "availability": "Both",
     "supplier": "Siargao Boards",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "SUR-001.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/SUR-001.jpg",
+    "lifestyle": "/lifestyle/SUR-001.jpg"
   },
   {
     "sku": "SUR-003",
@@ -448,7 +2348,48 @@
     "rentalRate": 15.03,
     "availability": "Both",
     "supplier": "Siargao Boards",
-    "yearIntroduced": 2021
+    "yearIntroduced": 2021,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Blue",
+        "image": "SUR-003-blue.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SUR-003-7FT",
+        "size": "7'0",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 279.0,
+        "unitCost": 109.82,
+        "rentalRate": 15.48,
+        "availability": "Both"
+      },
+      {
+        "sku": "SUR-003-8FT",
+        "size": "8'0",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 279.0,
+        "unitCost": 110.4,
+        "rentalRate": 14.75,
+        "availability": "Both"
+      },
+      {
+        "sku": "SUR-003-9FT",
+        "size": "9'0",
+        "color": "Blue",
+        "gender": "U",
+        "unitPrice": 279.0,
+        "unitCost": 109.74,
+        "rentalRate": 15.37,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SUR-003.jpg",
+    "lifestyle": "/lifestyle/SUR-003.jpg"
   },
   {
     "sku": "KIT-002",
@@ -459,7 +2400,58 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "WindRider Asia",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "KIT-002-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "KIT-002-S",
+        "size": "S",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 139.0,
+        "unitCost": 54.8,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "KIT-002-M",
+        "size": "M",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 139.0,
+        "unitCost": 54.73,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "KIT-002-L",
+        "size": "L",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 139.0,
+        "unitCost": 55.36,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "KIT-002-XL",
+        "size": "XL",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 139.0,
+        "unitCost": 55.23,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/KIT-002.jpg",
+    "lifestyle": "/lifestyle/KIT-002.jpg"
   },
   {
     "sku": "SUR-006",
@@ -470,7 +2462,38 @@
     "rentalRate": 11.62,
     "availability": "Both",
     "supplier": "Siargao Boards",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Tropical",
+        "image": "SUR-006-tropical.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SUR-006-YTH",
+        "size": "Youth",
+        "color": "Tropical",
+        "gender": "U",
+        "unitPrice": 89.0,
+        "unitCost": 38.3,
+        "rentalRate": 12.11,
+        "availability": "Both"
+      },
+      {
+        "sku": "SUR-006-ADL",
+        "size": "Adult",
+        "color": "Tropical",
+        "gender": "U",
+        "unitPrice": 89.0,
+        "unitCost": 38.21,
+        "rentalRate": 11.8,
+        "availability": "Both"
+      }
+    ],
+    "image": "/products/SUR-006.jpg",
+    "lifestyle": "/lifestyle/SUR-006.jpg"
   },
   {
     "sku": "SUR-004",
@@ -481,7 +2504,58 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2024
+    "yearIntroduced": 2024,
+    "type": "parent",
+    "colors": [
+      {
+        "color": "Black",
+        "image": "SUR-004-black.jpg"
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SUR-004-6FT",
+        "size": "6 ft",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 22.5,
+        "unitCost": 7.66,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "SUR-004-7FT",
+        "size": "7 ft",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 22.5,
+        "unitCost": 7.82,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "SUR-004-8FT",
+        "size": "8 ft",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 22.5,
+        "unitCost": 8.16,
+        "rentalRate": null,
+        "availability": "Sale only"
+      },
+      {
+        "sku": "SUR-004-9FT",
+        "size": "9 ft",
+        "color": "Black",
+        "gender": "U",
+        "unitPrice": 22.5,
+        "unitCost": 7.64,
+        "rentalRate": null,
+        "availability": "Sale only"
+      }
+    ],
+    "image": "/products/SUR-004.jpg",
+    "lifestyle": "/lifestyle/SUR-004.jpg"
   },
   {
     "sku": "SUR-005",
@@ -492,6 +2566,16 @@
     "rentalRate": null,
     "availability": "Sale only",
     "supplier": "Manila Surf Co",
-    "yearIntroduced": 2025
+    "yearIntroduced": 2025,
+    "type": "standalone",
+    "colors": [
+      {
+        "color": null,
+        "image": "SUR-005.jpg"
+      }
+    ],
+    "variants": [],
+    "image": "/products/SUR-005.jpg",
+    "lifestyle": "/lifestyle/SUR-005.jpg"
   }
 ]

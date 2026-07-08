@@ -4,46 +4,35 @@ import categories from "../data/categories.json";
 
 type Product = (typeof products)[number];
 
-/* Emoji lookup by subcategory — keeps the marketing cards playful. */
-const SUB_EMOJI: Record<string, string> = {
-  Masks: "🤿", Sets: "🥽", Snorkels: "🌊", Fins: "🐬", Wetsuits: "🩱",
-  Towels: "🏖️", Shade: "⛱️", "Sun Care": "🧴", Coolers: "🧊", Eyewear: "😎",
-  Footwear: "👟", Kids: "🪣", Accessories: "🎒",
-  Surfboards: "🏄", Skimboards: "🏄‍♂️", Kitesurf: "🪁",
-  Shirts: "👕", Rashguards: "🩱", Hats: "🧢", Swimwear: "🩳", Bottoms: "🩳",
-  Rods: "🎣", Reels: "🎣", Bait: "🪱", Nets: "🕸️", Tackle: "🪝",
-};
-
 const CATEGORY_INFO: Record<
   string,
-  { emoji: string; blurb: string; gradient: string }
+  { blurb: string; image: string }
 > = {
   "Snorkel & Dive": {
-    emoji: "🤿",
     blurb: "Masks, fins, snorkels & wetsuits for exploring the reef.",
-    gradient: "linear-gradient(160deg,#12587a,#1a7fa8)",
+    image: "/lifestyle/SNK-001.jpg",
   },
   Surfing: {
-    emoji: "🏄",
     blurb: "Boards, skimboards & kitesurf gear for every swell.",
-    gradient: "linear-gradient(160deg,#1a7fa8,#2aa6bd)",
+    image: "/lifestyle/SUR-003.jpg",
   },
   "Beach Essentials": {
-    emoji: "🏖️",
     blurb: "Towels, shade, coolers, sunnies & reef-safe sun care.",
-    gradient: "linear-gradient(160deg,#e08a3c,#eaa94f)",
+    image: "/lifestyle/BCH-005.jpg",
   },
   Fishing: {
-    emoji: "🎣",
     blurb: "Rods, reels, tackle & fresh bait for the day's catch.",
-    gradient: "linear-gradient(160deg,#0f3a54,#2a6f7a)",
+    image: "/lifestyle/FSH-001.jpg",
   },
   Apparel: {
-    emoji: "👕",
     blurb: "Rashguards, tees, hats & swimwear built for salt & sun.",
-    gradient: "linear-gradient(160deg,#2a6f7a,#4fa88f)",
+    image: "/lifestyle/APP-004.jpg",
   },
 };
+
+/* Semi-transparent scrim over a photo so white text stays legible. */
+const CARD_SCRIM =
+  "linear-gradient(to top, rgba(9,30,45,0.92) 0%, rgba(9,30,45,0.45) 45%, rgba(9,30,45,0.15) 100%)";
 
 const CATEGORY_ORDER = [
   "Snorkel & Dive",
@@ -69,7 +58,13 @@ export default function Home() {
   return (
     <main>
       {/* ---------- Hero ---------- */}
-      <section className="hero">
+      <section
+        className="hero"
+        style={{
+          backgroundImage:
+            "linear-gradient(165deg, rgba(15,58,84,0.82) 0%, rgba(18,88,122,0.68) 55%, rgba(26,127,168,0.72) 100%), url(/lifestyle/BCH-005.jpg)",
+        }}
+      >
         <div className="container">
           <span className="hero__eyebrow">Apo Island · Philippines</span>
           <h1>Gear up for the reef.</h1>
@@ -137,9 +132,8 @@ export default function Home() {
                   key={name}
                   href="/#featured"
                   className="cat-card"
-                  style={{ background: info.gradient }}
+                  style={{ backgroundImage: `${CARD_SCRIM}, url(${info.image})` }}
                 >
-                  <span className="cat-card__emoji">{info.emoji}</span>
                   <h3>{name}</h3>
                   <p>{info.blurb}</p>
                   <div className="cat-card__meta">
@@ -163,15 +157,22 @@ export default function Home() {
           <div className="grid grid--4">
             {featured.map((p) => (
               <article key={p.sku} className="prod-card">
-                <span className="prod-card__badge">{p.subcategory}</span>
-                <div className="prod-card__emoji">{SUB_EMOJI[p.subcategory] ?? "🐚"}</div>
-                <h3>{p.name}</h3>
-                <p className="prod-card__sub">{p.category}</p>
-                <div className="prod-card__foot">
-                  <span className="prod-card__price">${p.price?.toFixed(2)}</span>
-                  {p.rentalRate ? (
-                    <span className="prod-card__rent">rent ${p.rentalRate.toFixed(2)}/day</span>
+                <div className="prod-card__img">
+                  {p.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={p.image} alt={p.name} loading="lazy" />
                   ) : null}
+                </div>
+                <div className="prod-card__body">
+                  <span className="prod-card__badge">{p.subcategory}</span>
+                  <h3>{p.name}</h3>
+                  <p className="prod-card__sub">{p.category}</p>
+                  <div className="prod-card__foot">
+                    <span className="prod-card__price">${p.price?.toFixed(2)}</span>
+                    {p.rentalRate ? (
+                      <span className="prod-card__rent">rent ${p.rentalRate.toFixed(2)}/day</span>
+                    ) : null}
+                  </div>
                 </div>
               </article>
             ))}
@@ -201,7 +202,10 @@ export default function Home() {
                 Find the Shop
               </Link>
             </div>
-            <div className="split__art" aria-hidden>🤿</div>
+            <div className="split__art">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/lifestyle/WET-001.jpg" alt="A diver in a rented wetsuit and fins on the reef" loading="lazy" />
+            </div>
           </div>
         </div>
       </section>

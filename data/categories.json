@@ -2,6 +2,8 @@
   {
     "name": "Apparel",
     "count": 8,
+    "variantCount": 76,
+    "photoCount": 15,
     "priceLow": 14.99,
     "priceHigh": 58.0,
     "rentable": 0
@@ -9,6 +11,8 @@
   {
     "name": "Beach Essentials",
     "count": 12,
+    "variantCount": 30,
+    "photoCount": 22,
     "priceLow": 6.99,
     "priceHigh": 89.0,
     "rentable": 8
@@ -16,6 +20,8 @@
   {
     "name": "Fishing",
     "count": 8,
+    "variantCount": 8,
+    "photoCount": 8,
     "priceLow": 6.99,
     "priceHigh": 98.0,
     "rentable": 2
@@ -23,6 +29,8 @@
   {
     "name": "Snorkel & Dive",
     "count": 9,
+    "variantCount": 38,
+    "photoCount": 12,
     "priceLow": 28.5,
     "priceHigh": 109.0,
     "rentable": 9
@@ -30,6 +38,8 @@
   {
     "name": "Surfing",
     "count": 8,
+    "variantCount": 19,
+    "photoCount": 10,
     "priceLow": 5.99,
     "priceHigh": 1099.0,
     "rentable": 4

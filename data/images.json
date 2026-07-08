@@ -1,0 +1,182 @@
+{
+  "APP-001": {
+    "product": "/products/APP-001.jpg",
+    "lifestyle": "/lifestyle/APP-001.jpg"
+  },
+  "APP-002": {
+    "product": "/products/APP-002.jpg",
+    "lifestyle": "/lifestyle/APP-002.jpg"
+  },
+  "APP-003": {
+    "product": "/products/APP-003.jpg",
+    "lifestyle": "/lifestyle/APP-003.jpg"
+  },
+  "APP-004": {
+    "product": "/products/APP-004.jpg",
+    "lifestyle": "/lifestyle/APP-004.jpg"
+  },
+  "APP-005": {
+    "product": "/products/APP-005.jpg",
+    "lifestyle": "/lifestyle/APP-005.jpg"
+  },
+  "APP-006": {
+    "product": "/products/APP-006.jpg",
+    "lifestyle": "/lifestyle/APP-006.jpg"
+  },
+  "APP-007": {
+    "product": "/products/APP-007.jpg",
+    "lifestyle": "/lifestyle/APP-007.jpg"
+  },
+  "BCH-001": {
+    "product": "/products/BCH-001.jpg",
+    "lifestyle": "/lifestyle/BCH-001.jpg"
+  },
+  "BCH-002": {
+    "product": "/products/BCH-002.jpg",
+    "lifestyle": "/lifestyle/BCH-002.jpg"
+  },
+  "BCH-003": {
+    "product": "/products/BCH-003.jpg",
+    "lifestyle": "/lifestyle/BCH-003.jpg"
+  },
+  "BCH-004": {
+    "product": "/products/BCH-004.jpg",
+    "lifestyle": "/lifestyle/BCH-004.jpg"
+  },
+  "BCH-005": {
+    "product": "/products/BCH-005.jpg",
+    "lifestyle": "/lifestyle/BCH-005.jpg"
+  },
+  "BCH-006": {
+    "product": "/products/BCH-006.jpg",
+    "lifestyle": "/lifestyle/BCH-006.jpg"
+  },
+  "BCH-007": {
+    "product": "/products/BCH-007.jpg",
+    "lifestyle": "/lifestyle/BCH-007.jpg"
+  },
+  "BCH-008": {
+    "product": "/products/BCH-008.jpg",
+    "lifestyle": "/lifestyle/BCH-008.jpg"
+  },
+  "BCH-009": {
+    "product": "/products/BCH-009.jpg",
+    "lifestyle": "/lifestyle/BCH-009.jpg"
+  },
+  "BCH-010": {
+    "product": "/products/BCH-010.jpg",
+    "lifestyle": "/lifestyle/BCH-010.jpg"
+  },
+  "BCH-011": {
+    "product": "/products/BCH-011.jpg",
+    "lifestyle": "/lifestyle/BCH-011.jpg"
+  },
+  "BCH-012": {
+    "product": "/products/BCH-012.jpg",
+    "lifestyle": "/lifestyle/BCH-012.jpg"
+  },
+  "FIN-001": {
+    "product": "/products/FIN-001.jpg",
+    "lifestyle": "/lifestyle/FIN-001.jpg"
+  },
+  "FIN-002": {
+    "product": "/products/FIN-002.jpg",
+    "lifestyle": "/lifestyle/FIN-002.jpg"
+  },
+  "FIN-003": {
+    "product": "/products/FIN-003.jpg",
+    "lifestyle": "/lifestyle/FIN-003.jpg"
+  },
+  "FSH-001": {
+    "product": "/products/FSH-001.jpg",
+    "lifestyle": "/lifestyle/FSH-001.jpg"
+  },
+  "FSH-002": {
+    "product": "/products/FSH-002.jpg",
+    "lifestyle": "/lifestyle/FSH-002.jpg"
+  },
+  "FSH-003": {
+    "product": "/products/FSH-003.jpg",
+    "lifestyle": "/lifestyle/FSH-003.jpg"
+  },
+  "FSH-004": {
+    "product": "/products/FSH-004.jpg",
+    "lifestyle": "/lifestyle/FSH-004.jpg"
+  },
+  "FSH-005": {
+    "product": "/products/FSH-005.jpg",
+    "lifestyle": "/lifestyle/FSH-005.jpg"
+  },
+  "FSH-006": {
+    "product": "/products/FSH-006.jpg",
+    "lifestyle": "/lifestyle/FSH-006.jpg"
+  },
+  "FSH-007": {
+    "product": "/products/FSH-007.jpg",
+    "lifestyle": "/lifestyle/FSH-007.jpg"
+  },
+  "FSH-008": {
+    "product": "/products/FSH-008.jpg",
+    "lifestyle": "/lifestyle/FSH-008.jpg"
+  },
+  "KIT-001": {
+    "product": "/products/KIT-001.jpg",
+    "lifestyle": "/lifestyle/KIT-001.jpg"
+  },
+  "KIT-002": {
+    "product": "/products/KIT-002.jpg",
+    "lifestyle": "/lifestyle/KIT-002.jpg"
+  },
+  "SNK-001": {
+    "product": "/products/SNK-001.jpg",
+    "lifestyle": "/lifestyle/SNK-001.jpg"
+  },
+  "SNK-002": {
+    "product": "/products/SNK-002.jpg",
+    "lifestyle": "/lifestyle/SNK-002.jpg"
+  },
+  "SNK-003": {
+    "product": "/products/SNK-003.jpg",
+    "lifestyle": "/lifestyle/SNK-003.jpg"
+  },
+  "SNK-004": {
+    "product": "/products/SNK-004.jpg",
+    "lifestyle": "/lifestyle/SNK-004.jpg"
+  },
+  "SNK-005": {
+    "product": "/products/SNK-005.jpg",
+    "lifestyle": "/lifestyle/SNK-005.jpg"
+  },
+  "SUR-001": {
+    "product": "/products/SUR-001.jpg",
+    "lifestyle": "/lifestyle/SUR-001.jpg"
+  },
+  "SUR-002": {
+    "product": "/products/SUR-002.jpg",
+    "lifestyle": "/lifestyle/SUR-002.jpg"
+  },
+  "SUR-003": {
+    "product": "/products/SUR-003.jpg",
+    "lifestyle": "/lifestyle/SUR-003.jpg"
+  },
+  "SUR-004": {
+    "product": "/products/SUR-004.jpg",
+    "lifestyle": "/lifestyle/SUR-004.jpg"
+  },
+  "SUR-005": {
+    "product": "/products/SUR-005.jpg",
+    "lifestyle": "/lifestyle/SUR-005.jpg"
+  },
+  "SUR-006": {
+    "product": "/products/SUR-006.jpg",
+    "lifestyle": "/lifestyle/SUR-006.jpg"
+  },
+  "WET-001": {
+    "product": "/products/WET-001.jpg",
+    "lifestyle": "/lifestyle/WET-001.jpg"
+  },
+  "WET-002": {
+    "product": "/products/WET-002.jpg",
+    "lifestyle": "/lifestyle/WET-002.jpg"
+  }
+}
