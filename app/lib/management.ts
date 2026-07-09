@@ -27,6 +27,10 @@ export const getRentalProducts = () =>
 export const getCustomerTypes = () =>
   adminSelect<CustomerTypeRow[]>("v_mgmt_customer_type?select=*&order=revenue.desc");
 
+export type InventoryRow = { sku: string; name: string; category: string; on_hand: number; rental_units: number; demand_365: number };
+export const getInventory = () =>
+  adminSelect<InventoryRow[]>("v_mgmt_inventory?select=*&order=name");
+
 /** Part B: orders + revenue in the last 7 days (live view). */
 export async function getLast7(): Promise<{ orders: number; revenue: number }> {
   const cutoff = new Date(Date.now() - 7 * 86_400_000).toISOString().slice(0, 10);

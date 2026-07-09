@@ -8,6 +8,9 @@ import {
   byYear, seasonality, forecastSeries,
 } from "../lib/management";
 import ForecastStudio from "./ForecastStudio";
+import Historicals from "./Historicals";
+import InventoryPanel from "./InventoryPanel";
+import { getInventory } from "../lib/management";
 
 export const dynamic = "force-dynamic";
 
@@ -59,6 +62,10 @@ export default async function ManagementPage() {
   } catch {
     A = null;
   }
+
+  // Inventory view (separate — may not exist until partc-inventory.sql is run).
+  let inventory: Awaited<ReturnType<typeof getInventory>> | null = null;
+  try { inventory = await getInventory(); } catch { inventory = null; }
 
   const revSeries = A ? forecastSeries(A.monthly) : [];
   const years = A ? byYear(A.monthly) : [];
@@ -133,7 +140,8 @@ export default async function ManagementPage() {
 
         {A && (
           <>
-            {/* Forecasting studio — the heart of the back office */}
+            {/* Historicals (year slicer) + forecasting studio — the heart of the back office */}
+            <Historicals monthly={A.monthly} />
             <ForecastStudio series={revSeries} />
 
             {/* Revenue by year — sales vs rentals (helping or cannibalizing?) */}
@@ -217,6 +225,9 @@ export default async function ManagementPage() {
             </section>
           </>
         )}
+
+        {/* Inventory / reorder */}
+        {inventory && inventory.length > 0 && <InventoryPanel rows={inventory} />}
 
         {/* Recent orders (Part B) */}
         <h2 className="mgr__h2">Recent orders</h2>
