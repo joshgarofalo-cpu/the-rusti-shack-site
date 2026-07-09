@@ -41,7 +41,11 @@ export async function askGemini(question: string): Promise<AskResult> {
         generationConfig: { temperature: 0.2, maxOutputTokens: 600 },
       }),
     });
-    if (!res.ok) throw new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 300)}`);
+    if (!res.ok) {
+      const err = new Error(`Gemini ${res.status}: ${(await res.text()).slice(0, 300)}`);
+      (err as Error & { status?: number }).status = res.status;
+      throw err;
+    }
     const j = await res.json();
     const parts: any[] = j.candidates?.[0]?.content?.parts || [];
     const fc = parts.find((p) => p.functionCall)?.functionCall;

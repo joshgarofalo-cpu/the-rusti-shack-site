@@ -45,6 +45,13 @@ export async function POST(request: Request) {
     return NextResponse.json(result);
   } catch (e) {
     console.error("assistant failed", e);
+    const status = (e as Error & { status?: number }).status;
+    if (status === 429) {
+      return NextResponse.json(
+        { error: "The AI provider's daily limit was reached. The free Gemini tier only allows a few questions per day — enable billing on the API key (still only cents per question) to lift the limit, or try again tomorrow." },
+        { status: 429 }
+      );
+    }
     return NextResponse.json({ error: "The assistant couldn't answer that right now." }, { status: 500 });
   }
 }
