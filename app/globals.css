@@ -589,3 +589,29 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); }
 .dash-slicer-label { font-size: 0.9rem; font-weight: 700; color: var(--muted); align-self: center; margin-right: 2px; }
 .mbar--on .mbar__fill { background: linear-gradient(90deg, var(--coral), #f0b06a); }
 .mbar--on .mbar__label, .mbar--on .mbar__val { color: var(--coral-deep); font-weight: 800; }
+
+/* ---------- Ask-your-data assistant ---------- */
+.ai { background: linear-gradient(160deg, #0f3a54, #12587a); border-radius: 18px; padding: 24px 24px 20px; color: #fff; }
+.ai .mgr__h2 { color: #fff; }
+.ai .mgr__lead { color: #cfe6ee; }
+.ai__head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ai__badge { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: #eaf7fb; padding: 4px 10px; border-radius: 999px; }
+.ai__form { display: flex; gap: 10px; margin-top: 14px; }
+.ai__form input { flex: 1; min-width: 0; padding: 12px 14px; border-radius: 12px; border: none; font-size: 1rem; font-family: inherit; color: var(--ink); }
+.ai__form input:focus { outline: none; box-shadow: 0 0 0 3px rgba(127,198,217,0.5); }
+.ai__form .btn { border: none; }
+.ai__examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.ai__chip { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.22); color: #eaf7fb; border-radius: 999px; padding: 6px 12px; font-size: 0.85rem; cursor: pointer; }
+.ai__chip:hover:not(:disabled) { background: rgba(255,255,255,0.22); }
+.ai__chip:disabled { opacity: 0.5; cursor: default; }
+.ai__thread { margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+.ai__card { background: #fff; color: var(--ink); border-radius: 14px; padding: 16px 18px; }
+.ai__card--wait { color: var(--muted); font-style: italic; }
+.ai__q { font-weight: 700; color: var(--navy); }
+.ai__a { margin-top: 6px; line-height: 1.6; }
+.ai__chart { margin-top: 14px; }
+.ai__chart .fc-chart { background: var(--sand-light); }
+.ai-bars { gap: 7px; }
+.ai-bar-label { width: auto; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ai-bars .mbar { grid-template-columns: 200px 1fr 90px; }
+@media (max-width: 560px) { .ai__form { flex-direction: column; } .ai-bars .mbar { grid-template-columns: 110px 1fr 70px; } }

@@ -68,3 +68,11 @@ export async function adminInsert<T>(table: string, rows: unknown[]): Promise<T>
   });
   return (await res.json()) as T;
 }
+
+export async function adminUpsert(table: string, rows: unknown[], onConflict: string): Promise<void> {
+  await admin(`${table}?on_conflict=${onConflict}`, {
+    method: "POST",
+    headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
+    body: JSON.stringify(rows),
+  });
+}

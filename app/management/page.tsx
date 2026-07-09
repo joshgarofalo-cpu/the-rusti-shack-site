@@ -10,6 +10,7 @@ import {
 import ForecastStudio from "./ForecastStudio";
 import Dashboard from "./Dashboard";
 import InventoryPanel from "./InventoryPanel";
+import Assistant from "./Assistant";
 
 export const dynamic = "force-dynamic";
 
@@ -81,6 +82,9 @@ export default async function ManagementPage() {
             <a href="/api/management/export?table=customers_contact">Customers_Contact</a>
           </div>
         </div>
+
+        {/* Part D: ask-your-data assistant (private, read-only, grounded) */}
+        <Assistant />
 
         {!hasAnalytics && (
           <p className="mgr__notice">
