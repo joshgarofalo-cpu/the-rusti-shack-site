@@ -31,6 +31,11 @@ export type InventoryRow = { sku: string; name: string; category: string; on_han
 export const getInventory = () =>
   adminSelect<InventoryRow[]>("v_mgmt_inventory?select=*&order=name");
 
+export type ProductYearRow = { yr: number; sku: string; name: string; category: string; units: number; revenue: number; cost: number; margin: number };
+export type CustomerYearRow = { yr: number; type: string; customers: number; orders: number; revenue: number };
+export const getProductYear = () => adminSelect<ProductYearRow[]>("v_mgmt_product_year?select=*");
+export const getCustomerYear = () => adminSelect<CustomerYearRow[]>("v_mgmt_customer_year?select=*");
+
 /** Part B: orders + revenue in the last 7 days (live view). */
 export async function getLast7(): Promise<{ orders: number; revenue: number }> {
   const cutoff = new Date(Date.now() - 7 * 86_400_000).toISOString().slice(0, 10);

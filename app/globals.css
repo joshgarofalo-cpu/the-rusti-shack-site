@@ -584,3 +584,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; color: var(--navy); }
 .hc-year.is-active { background: var(--navy); border-color: var(--navy); color: #fff; }
 .hc-rev { fill: none; stroke: var(--teal); stroke-width: 2.5; stroke-linejoin: round; }
 .hc-margin { fill: none; stroke: var(--navy); stroke-width: 2.5; stroke-linejoin: round; }
+
+/* ---------- Dashboard year slicer highlight ---------- */
+.dash-slicer-label { font-size: 0.9rem; font-weight: 700; color: var(--muted); align-self: center; margin-right: 2px; }
+.mbar--on .mbar__fill { background: linear-gradient(90deg, var(--coral), #f0b06a); }
+.mbar--on .mbar__label, .mbar--on .mbar__val { color: var(--coral-deep); font-weight: 800; }
