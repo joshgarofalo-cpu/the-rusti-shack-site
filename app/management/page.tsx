@@ -5,7 +5,7 @@ import { ManagerLogin, LogoutButton } from "./ManagerClient";
 import {
   getTotals, getMonthly, getProducts, getCategories, getCustomerTypes,
   getRentalProducts, getLast7, getRecentOrders,
-  byYear, seasonality, forecastSeries,
+  byYear, seasonality, forecastSeries, completeMonths,
 } from "../lib/management";
 import ForecastStudio from "./ForecastStudio";
 import Historicals from "./Historicals";
@@ -67,9 +67,10 @@ export default async function ManagementPage() {
   let inventory: Awaited<ReturnType<typeof getInventory>> | null = null;
   try { inventory = await getInventory(); } catch { inventory = null; }
 
+  const cleanMonthly = A ? completeMonths(A.monthly) : [];
   const revSeries = A ? forecastSeries(A.monthly) : [];
-  const years = A ? byYear(A.monthly) : [];
-  const season = A ? seasonality(A.monthly) : [];
+  const years = byYear(cleanMonthly);
+  const season = seasonality(cleanMonthly);
   const topMargin = A ? [...A.products].sort((a, b) => b.margin - a.margin).slice(0, 6) : [];
   const thin = A
     ? [...A.products].filter((p) => p.units >= 20).sort((a, b) => a.margin / a.revenue - b.margin / b.revenue).slice(0, 6)
@@ -141,7 +142,7 @@ export default async function ManagementPage() {
         {A && (
           <>
             {/* Historicals (year slicer) + forecasting studio — the heart of the back office */}
-            <Historicals monthly={A.monthly} />
+            <Historicals monthly={cleanMonthly} />
             <ForecastStudio series={revSeries} />
 
             {/* Revenue by year — sales vs rentals (helping or cannibalizing?) */}
