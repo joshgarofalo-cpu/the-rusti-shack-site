@@ -1,7 +1,7 @@
 import { TOOLS, TOOL_MAP } from "./ai-tools";
 
 const KEY = process.env.GEMINI_API_KEY;
-const MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 
 export function geminiConfigured(): boolean {
   return Boolean(KEY);
@@ -17,6 +17,7 @@ Rules:
 - Never invent, estimate, or guess a number. If the tools can't answer, say so in one sentence.
 - You only ever see aggregates — you have NO access to individual customers, their names, emails, phones, or addresses, and you must not claim to. If asked for personal customer details, explain you only work with anonymised aggregates.
 - Never use outside/world knowledge or browse anything; stay strictly within the tool data.
+- All monetary figures are in US dollars — always write amounts with a "$" sign, never any other currency symbol.
 - Keep answers to 2-4 sentences: state the key figures, then let the chart show the rest.
 - The current date is ${new Date().toISOString().slice(0, 10)}. The data runs from 2021 to early 2026.`;
 
